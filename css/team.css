@@ -1,0 +1,390 @@
+@font-face {
+  font-family:'Agharti';
+  src: url('..//fonts/agharti-font-family-1731807283-0/AghartiFamilyTest-Bold-BF66722ede4bf4a.otf') format('truetype');
+  font-weight: 1000;
+  font-style: normal;
+}
+@font-face {
+  font-family:'LexendDeca';
+  src: url('../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+
+p{
+  font-family: 'LexendDeca';
+}
+* {
+  box-sizing: border-box;
+ }
+ * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+span{
+  font-family: 'LexendDeca';
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+/*header starts*/
+ #navbar {
+  background: white;
+  height: 70px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 102;
+  padding: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(10px);
+  margin-top: 40px;
+  transition: top 0.8s;
+}
+
+
+#navbar #logo {
+  display: block;
+  height: 10px;
+  margin: 5px;
+  float: left;
+}
+#navbar #logo img {
+  width: 50px;
+}
+#logo {
+  position: relative;
+  top: 6px;
+  left: 30px;
+}
+
+#navbar #logo span {
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff!important;
+}
+.header-setting {
+  float: left;
+  text-align: center;
+  height: 70px;
+  position: relative;
+  left: 37%;
+  margin-left: 15px;
+}
+.hs-toggles {
+  padding: 5px 0;
+}
+.header-name {
+position: relative;
+  font-size: 16px;
+  top: 20px;
+  font-weight:450;
+  line-height: 20px;
+  padding: 20px;
+  padding-right: 25px;
+  color: black;
+  font-family:'LexendDeca';
+  text-decoration: none;
+}
+.header-name:hover{
+  color: #ff5c35;
+}
+.scanner{
+position: absolute;
+}
+/*header ends*/
+
+.team-bg{
+    background-color: #f2e1c5;
+    padding-bottom: 80px;
+}
+.team-heading{
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+.team-heading h2{
+    font-family: "Agharti";
+    letter-spacing: 3px;
+    font-size: 70px;
+    margin-bottom: 5px;
+    color: #213343;
+}
+.team-heading p{
+    padding: 0 20%;
+    font-family: "LexendDeca";
+    line-height: 1.5em;
+    font-weight: 350;
+    letter-spacing: 1.2px;
+    color: #213343;
+}
+.container {
+    width: 100%;
+    padding: 0px 10%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.tabs {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    margin-bottom: 90px;
+    border: #213343 solid 1px;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.tabs button{
+    background-color: white;
+}
+.tab {
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 45%;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #213343;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Agharti";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 23px;
+    border: none;
+}
+.tab:hover {
+    background-color: #213343;
+    color: white;
+}
+.tab:active {
+    animation: clickAnimation 0.2s;
+}
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.tab.active {
+    background-color: #213343;
+    color: white;
+}
+
+.team-title{
+  text-align: center;
+}
+.team-title h3{
+  font-family: "Agharti";
+  font-size: 50px;
+  color: #213343;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    display: inline-block;
+    margin: 0 1.7%;
+    margin-bottom: 120px;
+
+  }
+ 
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 20px ;
+  }
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+  .flip-card-front h3 {
+    margin: 15px 0 5px;
+    font-size: 1.4em;
+    color: #343a40;
+    font-family: "LexendDeca";
+    font-style: 500;
+}
+.flip-card-front p {
+    margin: 0;
+    color: #55585a;
+    font-family: "LexendDeca";
+    font-size: 16px;
+}
+  
+  .flip-card-back {
+    background-color: #213343;
+    border-radius: 20px;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 22px;
+  }
+  .flip-card-back h1{
+    font-family: "LexendDeca";
+    font-size: 28px;
+    font-weight: 500;
+    margin: 25px 0;
+  }
+  .flip-card-back p{
+    font-family: "LexendDeca";
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    font-size: 14px;
+  }
+  .hidden {
+    display: none;
+}
+  .social-links-team{
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .social-links-team img{
+    width: 40px;
+  }
+
+
+ /*footer*/
+ .footer{
+  background-color:#213343;
+  height: 25vh;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.footer-container{
+  padding: 45px 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-logo{
+  height: auto; 
+  width: 300px;
+  position: relative;
+}
+.date-footer{
+  font-family: 'LexendDeca';
+  color: #949393;
+  position: relative;
+  left: 10px;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+}
+.copyrights{
+  color: white;
+  font-family: 'LexendDeca';
+  font-size: 10px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.hs-toggles-footer {
+  position: relative;
+  left: 23%;
+}
+.footer-name {
+  position: relative;
+    font-size: 15px;
+    top: 30px;
+    line-height: 20px;
+    padding: 20px;
+    padding-right: 15px;
+    color: #ffffff;
+    font-family:'LexendDeca';
+    font-weight: 500;
+    text-decoration: none;
+}
+.social-buttons{
+  font-size: 25px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  top: 100px;
+}
+.social-buttons p{
+  color: grey;
+  position: absolute;
+  font-size: 18px;
+  top: -8px;
+  left: -150px;
+  font-family: 'LexendDeca';
+}
+.social-buttons a.fab {
+  display: inline-block;;
+  margin: 8px 0 8px 0px;
+}
+
+.social-buttons a {
+  font-size: 0.64em;
+  padding-right: 0.6em;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 10px;
+}
+.social-buttons a {
+  display: inline-block;
+  border-radius: var(--ap-border-radius);
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background-color: #213343;
+  padding: 10px;
+  border-radius: 50%;
+  border: grey solid 0.3px;
+  transition: 1s;
+}
+.color{
+  color: white;
+}
+
+/*footer ends*/
