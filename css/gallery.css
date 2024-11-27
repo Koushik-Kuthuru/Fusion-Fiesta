@@ -109,16 +109,16 @@
     display: inline-block;
     position: relative;
     z-index: 3;
-    margin-top: 280px;
+    margin-top: 260px;
     margin-bottom: 20px;
   }
   
   @keyframes move {
     from {
-      transform: rotate(45deg) translate(-120px, 60px);
+      transform: rotate(45deg) translate(-400px, -5px);
     }
     to {
-      transform: rotate(45deg) translate(-120px, -290px);
+      transform: rotate(45deg) translate(-400px, -120px);
     }
   }
   body .container {
@@ -128,9 +128,9 @@
     right: 0px;
     top: 0px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 1rem;
-    animation: move 4.5s linear infinite alternate;
+    grid-template-columns: auto auto ;
+    gap: 5px;
+    animation: move 5.5s linear infinite alternate;
   }
   .tabs {
     display: flex;
@@ -192,7 +192,7 @@
 
   .position-heading{
     position: relative;
-    left: 10%;
+    left: 15%;
   }
   
   .container .child-container {
