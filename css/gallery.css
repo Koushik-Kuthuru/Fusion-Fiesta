@@ -148,6 +148,9 @@
     color: white;
     text-align: center;
   }
+  .tabs a:hover{
+    transform: scale(1.08);
+  }
   .tab {
     padding: 10px 20px;
     border-radius: 15px;

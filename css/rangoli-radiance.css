@@ -1,0 +1,214 @@
+
+@font-face {
+    font-family:'Agharti';
+    src: url('..//fonts/agharti-font-family-1731807283-0/AghartiFamilyTest-Bold-BF66722ede4bf4a.otf') format('truetype');
+    font-weight: 1000;
+    font-style: normal;
+  }
+  @font-face {
+    font-family:'LexendDeca';
+    src: url('../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+  }
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  } 
+  /*HEADER STARTS
+---------------------------------------------------*/
+#navbar {
+    background: white;
+    height: 70px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 102;
+    padding: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+    transition: top 0.8s;
+  }
+  
+  
+  #navbar #logo {
+    display: block;
+    height: 10px;
+    margin: 5px;
+    float: left;
+  }
+  #navbar #logo img {
+    width: 50px;
+  }
+  #logo {
+    position: relative;
+    top: 6px;
+    left: 30px;
+  }
+  
+  #navbar #logo span {
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff!important;
+  }
+  .header-setting {
+    float: left;
+    text-align: center;
+    height: 70px;
+    position: relative;
+    left: 37%;
+    margin-left: 15px;
+  }
+  .hs-toggles {
+    padding: 5px 0;
+  }
+  .header-name {
+  position: relative;
+    font-size: 16px;
+    top: 20px;
+    font-weight:450;
+    line-height: 20px;
+    padding: 20px;
+    padding-right: 25px;
+    color: black;
+    font-family:'LexendDeca';
+    text-decoration: none;
+  }
+  .header-name:hover{
+    color: #ff5c35;
+  }
+  .scanner{
+  position: absolute;
+  }
+  
+  /*HEADER ENDS
+  ---------------------------------------------------*/
+  .events-image-bg{
+    background: #f2e1c5;
+    color: #fff;
+    padding-bottom: 80px;
+  }
+  .events-image-bg img{
+    margin: 0;
+    width: 100vw;
+    height: 70vh;
+  }
+  .about-container{
+    position: relative;
+    text-align: center;
+    border: #f2e1c5 solid 1px;
+    margin: 0 10%;
+    margin-top: 80px;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #e91e63, #ff5722);
+  }
+  .about-container h1{
+    color: white;
+    font-family: "LexendDeca";
+    font-size: 50px;
+    margin: 8px 0;
+  }
+  .about-container p{
+    color: white;
+    font-family: "LexendDeca";
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin: 20px 50px;
+  }
+  .register-btn{
+    text-align: center;
+    margin: 70px 0;
+  }
+  .register-btn:hover{
+    transform: scale(1.05);
+  }
+  .register-btn a{
+    color: white;
+    font-weight: 800;
+    background-color: #213343;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: "LexendDeca";
+    letter-spacing: 2px;
+  }
+
+  .details {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #f3d8ac, #fd8b69);;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    margin: 0 20% ;
+}
+.details a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: "LexendDeca";
+    font-weight: 600;
+}
+.details a:hover{
+  font-weight: bold;
+  border-bottom: 3px solid #ffffff;
+  color: #213343;
+}
+.details a.active {
+    font-weight: bold;
+    border-bottom: 3px solid #ffffff;
+    color: #213343;
+}
+#details ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+  margin: 0 20%;
+}
+#details ul li {
+  margin: 10px 0;
+}
+.section {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #213343;
+    margin: 0;
+    margin: 0 20%;
+    font-family: 'LexendDeca';
+}
+.section.active {
+    display: block;
+}
+.contact-section {
+    background-color: white;
+    padding: 20px;
+    color: #213343;
+}
+.contact-card {
+    border: 1px solid #213343;
+    padding: 20px;
+    margin: 20px 10%;
+    text-align: center;
+}
+.contact-card p {
+    margin: 5px 0;
+}
