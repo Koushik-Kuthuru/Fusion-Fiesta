@@ -161,14 +161,12 @@
   }
   .events-image-bg img{
     margin: 0;
-    width: 100vw;
-    height: 70vh;
-    border-bottom: #213343 solid 3px;
+    width: 100%;
   }
   .overlay-events{
     position: absolute;
     top: 15%;
-    left: 250px;
+    left: 150px;
     z-index: 1;
   }
   .overlay-events h1{

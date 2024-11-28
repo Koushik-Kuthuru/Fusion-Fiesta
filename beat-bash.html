@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/project-parade.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/fusion fiesta.png">
+    <title> Project Parade | Fusion Fiesta</title>
+</head>
+<body>
+        <!--header-->
+        <nav id="navbar">
+            <a href="Home-Page.html" id="logo">
+                <img src="images/fusion fiesta.png" alt="Fusion Fiesta" />
+            </a>
+            <div class="header-setting">
+                <div class="hs-toggles">
+                      <a href="events.html" class="header-name">
+                        <span>EVENTS</span>
+                      </a>
+                    <a href="team.html" class="header-name">
+                        <span>TEAM</span>
+                    </a>
+                      <a href="gallery.html" class="header-name">
+                        <span>GALLERY</span>
+                      </a>
+                      <a href="games.html" class="header-name">
+                        <span>GAMES</span>
+                      </a>
+                      <a href="about.html" class="header-name">
+                        <span>ABOUT</span>
+                      </a>
+                    <a href="help.html" class="header-name">
+                        <span>HELP</span>
+                    </a>
+                    <a href="#" class="header-name" id="qrScannerBtn">
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-qr-code-scan scanner" viewBox="0 0 20 20" >
+                          <path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5M.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5M4 4h1v1H4z"/>
+                          <path d="M7 2H2v5h5zM3 3h3v3H3zm2 8H4v1h1z"/>
+                          <path d="M7 9H2v5h5zm-4 1h3v3H3zm8-6h1v1h-1z"/>
+                          <path d="M9 2h5v5H9zm1 1v3h3V3zM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8zm2 2H9V9h1zm4 2h-1v1h-2v1h3zm-4 2v-1H8v1z"/>
+                          <path d="M12 9h2V8h-2z"/>
+                        </svg>
+                      </span>
+                  </a>
+                </div>
+            </div>
+          </nav>
+        <!--body-->
+        <div id="qrModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button class="btn" id="loginBtn">Login</button>
+            </div>
+        </div>
+    
+        <div id="camera">
+            <video id="video" width="300" height="200" autoplay></video>
+            <canvas id="canvas" width="300" height="200" style="display:none;"></canvas>
+        </div>
+
+            <div class="events-image-bg">
+                <img src="images/Beat-Bash-banner.jpg" alt="project-parade">
+                <div class="overlay-events">
+                  <h1>Project <br> Parade<h1>
+                </div>
+                <div class="about-container">
+                  <h1>ABOUT</h1>
+                  <p>Gaming is a form of entertainment that involves interacting with a user interface to generate visual feedback on a two- or three-dimensional video display device such as a TV screen, computer monitor, or handheld device. It has evolved significantly over the years, from simple arcade games to complex, immersive experiences that can be enjoyed on various platforms. Gaming can be a solitary activity or a social one, with many games offering multiplayer options that allow players to connect and compete with others around the world. The gaming industry continues to grow, with advancements in technology leading to new and exciting possibilities for gamers of all ages.</p>
+                </div>
+
+                <div class="register-btn">
+                  <a href="#">REGISTER</a>
+                </div>
+
+                <div class="details">
+                  <a href="#details" onclick="showSection('details')" class="active">Details</a>
+                  <a href="#rules" onclick="showSection('rules')">General Rules</a>
+                  <a href="#contact" onclick="showSection('contact')">Contact Us</a>
+              </div>
+
+              <div>
+              <div id="details" class="section active">
+                  <ul>
+                      <li>Point 1: This is an example point.</li>
+                      <li>Point 2: This is another example point.</li>
+                      <li>Point 3: Yet another example point.</li>
+                      <li>Point 4: Example point number four.</li>
+                      <li>Point 5: Example point number five.</li>
+                      <li>Point 6: Example point number six.</li>
+                      <li>Point 7: Example point number seven.</li>
+                  </ul>
+              </div>
+              <div id="timeline" class="section">
+                  <h2>Timeline</h2>
+                  <p>Timeline content goes here.</p>
+              </div>
+              <div id="rules" class="section">
+                  <h2>General Rules</h2>
+                  <p>General rules content goes here.</p>
+              </div>
+              <div id="contact" class="section contact-section">
+                  <div class="contact-card">
+                      <p>Hardik Gupta</p>
+                      <p>+91 62604 47196</p>
+                      <p>hardik@techfest.org</p>
+                  </div>
+                  <div class="contact-card">
+                      <p>Ankit Raj</p>
+                      <p>+91 70616 82606</p>
+                      <p>ankit@techfest.org</p>
+                  </div>
+              </div>
+              </div>
+            </div>
+
+      <!--footer-->
+          <footer class="footer">
+            <div class="footer-container">
+              <div>
+                <img src="images/footer.png" alt="Fusion Fiesta" class="footer-logo"> 
+                <h3 class="date-footer">JANUARY 23 -24 • SCB BLOCK, ST. MARTIN'S </h3>
+                <p class="copyrights">
+                  © 2025 Fusion-Fiesta, All Rights Reserved.
+                </p>
+              </div>
+      
+              <div class="hs-toggles-footer">
+                <a href="#" class="footer-name">
+                  <span>EVENTS</span>
+                </a>
+              <a href="team.html" class="footer-name">
+                  <span>TEAM</span>
+              </a>
+                <a href="gallery.html" class="footer-name">
+                  <span>GALLERY</span>
+                </a>
+                <a href="games.html" class="footer-name">
+                  <span>GAMES</span>
+                </a>
+                <a href="contact.html" class="footer-name">
+                  <span>CONTACT</span>
+              </a>
+                <a href="about.html" class="footer-name">
+                  <span>ABOUT</span>
+                </a>
+              <a href="help.html" class="footer-name">
+                  <span>HELP</span>
+              </a>
+          </div>
+      
+            <div class="social-buttons">
+              <p>#fusionfiesta25</p>
+            <a href="#" class="social-button social-button--youtube" aria-label="youtube">
+            <i class="fab fa-youtube color"></i>
+          </a>
+          <a href="https://www.instagram.com/fusionfiesta_cse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-button social-button--instagram" aria-label="instagram">
+            <i class="fab fa-instagram color"></i>
+          </a>
+          <a href="#" class="social-button social-button--linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in color"></i>
+          </a>
+          <a href="#" class="social-button social-button--github" aria-label="GitHub">
+            <i class="fab fa-github color"></i>
+          </a>
+            <a href="#" class="social-button social-button--mail" aria-label="gmail">
+            <i class="fas fa-mail-bulk color"></i>
+          </a>
+            </div>
+      
+            </div>
+      
+        </footer>
+
+            <script>
+              function showSection(sectionId) {
+                  var sections = document.querySelectorAll('.section');
+                  sections.forEach(function(section) {
+                      section.classList.remove('active');
+                  });
+                  document.getElementById(sectionId).classList.add('active');
+      
+                  var navLinks = document.querySelectorAll('.details a');
+                  navLinks.forEach(function(link) {
+                      link.classList.remove('active');
+                  });
+                  document.querySelector('.details a[href="#' + sectionId + '"]').classList.add('active');
+              }
+
+              const qrScannerBtn = document.getElementById('qrScannerBtn');
+        const qrModal = document.getElementById('qrModal');
+        const closeModal = document.getElementsByClassName('close')[0];
+        const loginBtn = document.getElementById('loginBtn');
+        const camera = document.getElementById('camera');
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        let scannedCodes = new Set();
+
+        qrScannerBtn.onclick = function() {
+            qrModal.style.display = "flex";
+        }
+
+        closeModal.onclick = function() {
+            qrModal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == qrModal) {
+                qrModal.style.display = "none";
+            }
+        }
+
+        loginBtn.onclick = function() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === "admin" && password === "password") {
+                qrModal.style.display = "none";
+                camera.style.display = "block";
+                startCamera();
+            } else {
+                alert("Invalid credentials");
+            }
+        }
+
+        function startCamera() {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => {
+                    video.srcObject = stream;
+                    video.play();
+                })
+                .catch(err => {
+                    console.error("Error accessing camera: ", err);
+                });
+
+            video.addEventListener('play', () => {
+                const context = canvas.getContext('2d');
+                setInterval(() => {
+                    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+                    const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+                    const code = jsQR(imageData.data, imageData.width, imageData.height);
+
+                    if (code && !scannedCodes.has(code.data)) {
+                        alert(`QR Code scanned: ${code.data}`);
+                        scannedCodes.add(code.data);
+                    }
+                }, 100);
+            });
+        }
+          </script>
+          <script src="js/Home-Page.js"></script>
+</body>
+</html>

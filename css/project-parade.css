@@ -165,8 +165,9 @@
   }
   .overlay-events{
     position: absolute;
+    float: right;
     top: 15%;
-    left: 250px;
+    right: 250px;
     z-index: 1;
   }
   .overlay-events h1{
