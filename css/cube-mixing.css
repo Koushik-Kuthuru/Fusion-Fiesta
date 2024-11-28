@@ -163,7 +163,6 @@
     margin: 0;
     width: 100vw;
     height: 70vh;
-    border-bottom: #213343 solid 3px;
   }
   .overlay-events{
     position: absolute;
@@ -187,16 +186,17 @@
     margin-top: 80px;
     padding: 30px;
     border-radius: 20px;
-    background: linear-gradient(to bottom, #e91e63, #ff5722);
+    background: linear-gradient(to right, #dcdada, #f0ede9);
+    border: #213343 solid 1px;
   }
   .about-container h1{
-    color: white;
+    color: #213343;
     font-family: "LexendDeca";
     font-size: 50px;
     margin: 8px 0;
   }
   .about-container p{
-    color: white;
+    color: #213343;
     font-family: "LexendDeca";
     font-size: 18px;
     letter-spacing: 1.5px;
@@ -223,7 +223,7 @@
   .details {
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, #f3d8ac, #fd8b69);;
+    background-color: #d8cac7;
     padding: 10px 0;
     border-bottom: 1px solid #fff;
     margin: 0 20% ;
