@@ -155,30 +155,29 @@
   /*HEADER ENDS
   ---------------------------------------------------*/
   .events-image-bg{
-    background: #FFF5E1;
+    background: #F5F5DC;
     color: #fff;
     padding-bottom: 80px;
-
   }
   .events-image-bg img{
     margin: 0;
     width: 100%;
-    border-bottom: #213343 solid 1px;
+    border-bottom: #333333 solid 2px;
   }
   .overlay-events{
     position: absolute;
-    top: 15%;
-    left: 250px;
+    top: 16%;
+    left: 55%;
     z-index: 1;
   }
   .overlay-events h1{
     font-family: "Agharti";
     text-transform: uppercase;
     letter-spacing: 20px;
-    font-size: 140px;
-    line-height: 150px;
-    color: #213343;
+    font-size:160px;
+    color: #443123;
     text-align: left;
+    margin: 0;
   }
   .overlay-events span{
     font-family: "LexendDeca";
@@ -186,7 +185,7 @@
     letter-spacing: 2px;
     position: relative;
     line-height: 50px;
-    top: -90px;
+    top: -110px;
   }
   .overlay-events p{
     font-family: "LexendDeca";
@@ -194,7 +193,7 @@
     letter-spacing: 1px;
     position: relative;
     line-height: 25px;
-    top: -90px;
+    top: -110px;
     text-transform: capitalize;
   }
   .register-btn{
@@ -202,7 +201,7 @@
     margin: 1px 0;
     line-height: 0;
     position: relative;
-    top: -85px;
+    top: -100px;
     float: left;
     left: 1px;
 
@@ -213,7 +212,7 @@
   .register-btn a{
     color: white;
     font-weight: 600;
-    background-color: #213343;
+    background-color: #443123;
     padding: 18px;
     border-radius: 10px;
     text-decoration: none;
@@ -224,6 +223,7 @@
   .about-container{
     position: relative;
     text-align: center;
+    border: #f2e1c5 solid 1px;
     margin: 0 15%;
     margin-top: 90px;
     margin-bottom: 100px;
@@ -233,27 +233,25 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   .about-container h1{
-    color: #213343;
+    color: #443123;
     font-family: "LexendDeca";
     font-size: 50px;
     margin: 8px 0;
   }
   .about-container p{
-    color: #213343;
+    color: #443123;
     font-family: "LexendDeca";
     font-size: 18px;
     letter-spacing: 1.5px;
     margin: 20px 50px;
   }
-
-
   .details {
     display: flex;
     justify-content: center;
-    background-color: #d8cac7;
+    background-color: #97897e;
     padding: 10px 0;
-    border: #213343 solid 1px;
-    border-bottom: none;
+    border: 1px solid #000;
+    border-bottom:none;
     margin: 0 20% ;
 }
 .details a {
@@ -268,12 +266,12 @@
 .details a:hover{
   font-weight: bold;
   border-bottom: 3px solid #ffffff;
-  color: #213343;
+  color: #443123;
 }
 .details a.active {
     font-weight: bold;
     border-bottom: 3px solid #ffffff;
-    color: #213343;
+    color: #443123;
 }
 #details ul {
   list-style-type: none;
@@ -289,12 +287,11 @@
     padding: 20px;
     text-align: center;
     background-color: #ffffff;
-    color: #213343;
+    color: #443123;
     margin: 0;
     margin: 0 20%;
     font-family: 'LexendDeca';
-    border: #213343 solid 1px;
-
+    border: #443123 solid 1px;
 }
 .section.active {
     display: block;
@@ -302,10 +299,10 @@
 .contact-section {
     background-color: white;
     padding: 20px;
-    color: #213343;
+    color: #443123;
 }
 .contact-card {
-    border: 1px solid #213343;
+    border: 1px solid #443123;
     padding: 20px;
     margin: 20px 10%;
     text-align: center;

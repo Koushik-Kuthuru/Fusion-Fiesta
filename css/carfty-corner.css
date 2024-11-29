@@ -163,12 +163,12 @@
   .events-image-bg img{
     margin: 0;
     width: 100%;
-    border-bottom: #213343 solid 1px;
+    border-bottom: #213343 solid 2px;
   }
   .overlay-events{
     position: absolute;
-    top: 15%;
-    left: 250px;
+    top: 14%;
+    left: 55%;
     z-index: 1;
   }
   .overlay-events h1{
@@ -193,7 +193,7 @@
     font-size: 18px;
     letter-spacing: 1px;
     position: relative;
-    line-height: 25px;
+    line-height: 35px;
     top: -90px;
     text-transform: capitalize;
   }
@@ -244,13 +244,14 @@
     font-size: 18px;
     letter-spacing: 1.5px;
     margin: 20px 50px;
+    font-style: italic;
   }
 
 
   .details {
     display: flex;
     justify-content: center;
-    background-color: #d8cac7;
+    background-color: #d6e3f3;
     padding: 10px 0;
     border: #213343 solid 1px;
     border-bottom: none;
