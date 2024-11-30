@@ -167,7 +167,7 @@
   .overlay-events{
     position: absolute;
     top: 15%;
-    left: 200px;
+    left: 250px;
     z-index: 1;
   }
   .overlay-events h1{
