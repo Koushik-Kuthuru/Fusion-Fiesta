@@ -1,35 +1,27 @@
 function showCategory(category) {
-  var tabs = document.querySelectorAll('.tab');
-  tabs.forEach(function(tab) {
-      tab.classList.remove('active');
-  });
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => tab.classList.remove('active'));
 
-  var members = document.querySelectorAll('.timeline');
-  members.forEach(function(member) {
-      member.classList.add('hidden');
-  });
+  const members = document.querySelectorAll('.timeline, .day-name');
+  members.forEach(member => member.classList.add('hidden'));
 
-  var members = document.querySelectorAll('.day-name');
-    members.forEach(function(member) {
-        member.classList.add('hidden');
-    });
+  const activeTab = document.querySelector(`.tab[onclick="showCategory('${category}')"]`);
+  if (activeTab) {
+      activeTab.classList.add('active');
+      // Store the active category in local storage
+      localStorage.setItem('activeTab', category);
+  }
 
-  var activeTab = document.querySelector('.tab[onclick="showCategory(\'' + category + '\')"]');
-  activeTab.classList.add('active');
-
-  var activeMembers = document.querySelectorAll('.timeline.' + category);
-  activeMembers.forEach(function(member) {
-      member.classList.remove('hidden');
-  });
-
-  var activeMembers = document.querySelectorAll('.day-name.' + category);
-    activeMembers.forEach(function(member) {
-        member.classList.remove('hidden');
-    });
+  const activeMembers = document.querySelectorAll(`.timeline.${category}, .day-name.${category}`);
+  activeMembers.forEach(member => member.classList.remove('hidden'));
 }
 
-// Show the default category
-showCategory('day-1');
+// Show the default category on page load
+document.addEventListener('DOMContentLoaded', () => {
+  const activeTab = localStorage.getItem('activeTab') || 'day-1'; // Default to 'day-1' if none found
+  showCategory(activeTab);
+});
+
 
 /**********************/
 (function() {
