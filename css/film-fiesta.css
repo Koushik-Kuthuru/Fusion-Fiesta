@@ -247,7 +247,7 @@
   .details {
     display: flex;
     justify-content: center;
-    background-color: #f3c2c2;
+    background-color: #efc5ff;
     padding: 10px 0;
     border: 1px solid #000;
     border-bottom:none;
@@ -276,10 +276,21 @@
   list-style-type: none;
   padding-left: 0;
   text-align: left;
-  margin: 0 20%;
+  margin: 0 50px;
 }
 #details ul li {
   margin: 10px 0;
+  line-height: 2;
+}
+#rules ul{
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+  margin: 0 50px;
+}
+#rules ul li {
+  margin: 10px 0;
+  line-height: 2;
 }
 .section {
     display: none;

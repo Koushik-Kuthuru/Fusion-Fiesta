@@ -1,0 +1,277 @@
+
+@font-face {
+    font-family:'Agharti';
+    src: url('..//fonts/agharti-font-family-1731807283-0/AghartiFamilyTest-Bold-BF66722ede4bf4a.otf') format('truetype');
+    font-weight: 1000;
+    font-style: normal;
+  }
+  @font-face {
+    font-family:'LexendDeca';
+    src: url('../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+  }
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f2e1c5;
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }  
+  /*HEADER STARTS
+  ---------------------------------------------------*/
+  #navbar {
+    background: white;
+    height: 70px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 102;
+    padding: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+    transition: top 0.8s;
+  }
+  
+  
+  #navbar #logo {
+    display: block;
+    height: 10px;
+    margin: 5px;
+    float: left;
+  }
+  #navbar #logo img {
+    width: 50px;
+  }
+  #logo {
+    position: relative;
+    top: 6px;
+    left: 30px;
+  }
+  
+  #navbar #logo span {
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff!important;
+  }
+  .header-setting {
+    float: left;
+    text-align: center;
+    height: 70px;
+    position: relative;
+    left: 37%;
+    margin-left: 15px;
+  }
+  .hs-toggles {
+    padding: 5px 0;
+  }
+  .header-name {
+  position: relative;
+    font-size: 16px;
+    top: 20px;
+    font-weight:450;
+    line-height: 20px;
+    padding: 20px;
+    padding-right: 25px;
+    color: black;
+    font-family:'LexendDeca';
+    text-decoration: none;
+  }
+  .header-name:hover{
+    color: #ff5c35;
+  }
+  .scanner{
+  position: absolute;
+  }
+  
+  /*HEADER ENDS
+  ---------------------------------------------------*/
+.games-bg-container {
+    background: #213343;
+    padding: 50px 0;
+    padding-top: 8%;
+    color: #fff;
+    text-align: center;
+}
+.intro-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+.games-bg-container h1{
+    font-size: 75px;
+    font-family: "Agharti";
+    letter-spacing: 10;
+    margin: 0;
+    text-transform: uppercase;
+}
+.bg-2-container {
+    width: 100%;
+    margin-top: 6rem;
+    padding: 0 10%;
+    margin-bottom: 6rem;
+    
+}
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+.game-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.game-card img {
+    width: 100%;
+    height: auto;
+}
+.game-card-content {
+    padding: 1rem;
+}
+.game-card-title {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+    color: #213343;
+    font-family: "LexendDeca";
+}
+.game-card-description {
+    font-size: 1rem;
+    font-family: "LexendDeca";
+    color: #666;
+}
+.game-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+.game-card-footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-family: "LexendDeca";
+}
+.game-card-footer .fa {
+    color: #ff6347;
+}
+
+
+ /*footer*/
+ .footer{
+    background-color:#213343;
+    height: 25vh;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .footer-container{
+    padding: 45px 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-logo{
+    height: auto; 
+    width: 300px;
+    position: relative;
+  }
+  .date-footer{
+    font-family: 'LexendDeca';
+    color: #949393;
+    position: relative;
+    left: 10px;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+  }
+  .copyrights{
+    color: white;
+    font-size: 10px;
+    font-family: "LexendDeca";
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+  .hs-toggles-footer {
+    position: relative;
+    left: 23%;
+  }
+  .footer-name {
+    position: relative;
+      font-size: 15px;
+      top: 30px;
+      line-height: 20px;
+      padding: 20px;
+      padding-right: 15px;
+      color: #ffffff;
+      font-family:'LexendDeca';
+      font-weight: 500;
+      text-decoration: none;
+  }
+  .social-buttons{
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 100px;
+  }
+  .social-buttons p{
+    color: grey;
+    position: absolute;
+    font-size: 18px;
+    top: 8px;
+    left: -150px;
+    font-family: 'LexendDeca';
+  }
+  .social-buttons a.fab {
+    display: inline-block;;
+    margin: 8px 0 8px 0px;
+  }
+  
+  .social-buttons a {
+    font-size: 0.64em;
+    padding-right: 0.6em;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .social-buttons a {
+    display: inline-block;
+    border-radius: var(--ap-border-radius);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: #213343;
+    padding: 10px;
+    border-radius: 50%;
+    border: grey solid 0.3px;
+    transition: 1s;
+  }
+  .color{
+    color: white;
+  }
+  
+  /*footer ends*/

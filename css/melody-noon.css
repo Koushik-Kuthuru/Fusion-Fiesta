@@ -166,7 +166,7 @@
   }
   .overlay-events{
     position: absolute;
-    top: 17%;
+    top: 22%;
     left: 280px;
     z-index: 1;
   }
@@ -175,7 +175,7 @@
     text-transform: uppercase;
     letter-spacing: 20px;
     font-size:120px;
-    color: #000000;
+    color: #fff;
     text-align: left;
   }
   .overlay-events span{
@@ -209,9 +209,9 @@
     transform: scale(1.05);
   }
   .register-btn a{
-    color: white;
+    color: #000;
     font-weight: 600;
-    background-color: #000000;
+    background-color: #fff;
     padding: 18px;
     border-radius: 10px;
     text-decoration: none;
@@ -276,10 +276,21 @@
   list-style-type: none;
   padding-left: 0;
   text-align: left;
-  margin: 0 20%;
+  margin: 0 50px;
 }
 #details ul li {
   margin: 10px 0;
+  line-height: 2;
+}
+#rules ul{
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+  margin: 0 50px;
+}
+#rules ul li {
+  margin: 10px 0;
+  line-height: 2;
 }
 .section {
     display: none;

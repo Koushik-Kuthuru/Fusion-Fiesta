@@ -279,10 +279,21 @@
   list-style-type: none;
   padding-left: 0;
   text-align: left;
-  margin: 0 20%;
+  margin: 0 50px;
 }
 #details ul li {
   margin: 10px 0;
+  line-height: 2;
+}
+#rules ul{
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+  margin: 0 50px;
+}
+#rules ul li {
+  margin: 10px 0;
+  line-height: 2;
 }
 .section {
     display: none;
