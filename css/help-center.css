@@ -1,0 +1,274 @@
+
+@font-face {
+    font-family:'Agharti';
+    src: url('..//fonts/agharti-font-family-1731807283-0/AghartiFamilyTest-Bold-BF66722ede4bf4a.otf') format('truetype');
+    font-weight: 1000;
+    font-style: normal;
+  }
+  @font-face {
+    font-family:'LexendDeca';
+    src: url('../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+  }
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f2e1c5;
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }  
+  /*HEADER STARTS
+  ---------------------------------------------------*/
+  #navbar {
+    background: white;
+    height: 70px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 102;
+    padding: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+    transition: top 0.8s;
+  }
+  
+  
+  #navbar #logo {
+    display: block;
+    height: 10px;
+    margin: 5px;
+    float: left;
+  }
+  #navbar #logo img {
+    width: 50px;
+  }
+  #logo {
+    position: relative;
+    top: 6px;
+    left: 30px;
+  }
+  
+  #navbar #logo span {
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff!important;
+  }
+  .header-setting {
+    float: left;
+    text-align: center;
+    height: 70px;
+    position: relative;
+    left: 37%;
+    margin-left: 15px;
+  }
+  .hs-toggles {
+    padding: 5px 0;
+  }
+  .header-name {
+  position: relative;
+    font-size: 16px;
+    top: 20px;
+    font-weight:450;
+    line-height: 20px;
+    padding: 20px;
+    padding-right: 25px;
+    color: black;
+    font-family:'LexendDeca';
+    text-decoration: none;
+  }
+  .header-name:hover{
+    color: #ff5c35;
+  }
+  .scanner{
+  position: absolute;
+  }
+  
+  /*HEADER ENDS
+  ---------------------------------------------------*/
+.help-bg-container {
+    background: #213343;
+    padding: 50px 0;
+    padding-top: 8%;
+    color: #fff;
+    text-align: center;
+}
+.intro-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+.help-bg-container h1{
+    font-size: 75px;
+    font-family: "Agharti";
+    letter-spacing: 10;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.bg-help-container-1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 15%;
+}
+ h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.faq-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 30px;
+}
+.faq-question {
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    font-family: "LexendDeca";
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+}
+.faq-question::after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #213343;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: transform 0.3s;
+}
+.faq-answer {
+    display: none;
+    padding-top: 30px;
+    color: #213343;
+    font-family: "LexendDeca";
+}
+.faq-question.active::after {
+    transform: rotate(180deg);
+}
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+
+ /*footer*/
+ .footer{
+    background-color:#213343;
+    height: 25vh;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .footer-container{
+    padding: 45px 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-logo{
+    height: auto; 
+    width: 300px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .date-footer{
+    font-family: 'LexendDeca';
+    color: #949393;
+    position: relative;
+    left: 10px;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+  }
+  .copyrights{
+    color: white;
+    font-size: 10px;
+    font-family: "LexendDeca";
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+  .hs-toggles-footer {
+    position: relative;
+    left: 23%;
+  }
+  .footer-name {
+    position: relative;
+      font-size: 15px;
+      top: 30px;
+      line-height: 20px;
+      padding: 20px;
+      padding-right: 15px;
+      color: #ffffff;
+      font-family:'LexendDeca';
+      font-weight: 500;
+      text-decoration: none;
+  }
+  .social-buttons{
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 100px;
+  }
+  .social-buttons p{
+    color: grey;
+    position: absolute;
+    font-size: 18px;
+    top: 8px;
+    left: -150px;
+    font-family: 'LexendDeca';
+  }
+  .social-buttons a.fab {
+    display: inline-block;;
+    margin: 8px 0 8px 0px;
+  }
+  
+  .social-buttons a {
+    font-size: 0.64em;
+    padding-right: 0.6em;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .social-buttons a {
+    display: inline-block;
+    border-radius: var(--ap-border-radius);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: #213343;
+    padding: 10px;
+    border-radius: 50%;
+    border: grey solid 0.3px;
+    transition: 1s;
+  }
+  .color{
+    color: white;
+  }
+  
+  /*footer ends*/
