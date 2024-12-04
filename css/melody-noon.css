@@ -243,11 +243,12 @@
     font-size: 18px;
     letter-spacing: 1.5px;
     margin: 20px 50px;
+    text-align: justify;
   }
   .details {
     display: flex;
     justify-content: center;
-    background-color: #213343;
+    background-color: #575a5b;
     padding: 10px 0;
     border: 1px solid #000;
     border-bottom:none;

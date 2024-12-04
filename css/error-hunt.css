@@ -252,6 +252,7 @@
     border: 1px solid #000;
     border-bottom:none;
     margin: 0 20% ;
+    text-align: justify;
 }
 .details a {
     color: #fff;

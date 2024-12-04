@@ -244,6 +244,7 @@
     font-size: 18px;
     letter-spacing: 1.5px;
     margin: 20px 50px;
+    text-align: justify;
   }
   .details {
     display: flex;
