@@ -192,7 +192,8 @@
       
         </footer>
 
-            <script>
+    
+                          <script>
               function showSection(sectionId) {
                   var sections = document.querySelectorAll('.section');
                   sections.forEach(function(section) {
@@ -206,68 +207,8 @@
                   });
                   document.querySelector('.details a[href="#' + sectionId + '"]').classList.add('active');
               }
+            </script>
 
-              const qrScannerBtn = document.getElementById('qrScannerBtn');
-        const qrModal = document.getElementById('qrModal');
-        const closeModal = document.getElementsByClassName('close')[0];
-        const loginBtn = document.getElementById('loginBtn');
-        const camera = document.getElementById('camera');
-        const video = document.getElementById('video');
-        const canvas = document.getElementById('canvas');
-        let scannedCodes = new Set();
-
-        qrScannerBtn.onclick = function() {
-            qrModal.style.display = "flex";
-        }
-
-        closeModal.onclick = function() {
-            qrModal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == qrModal) {
-                qrModal.style.display = "none";
-            }
-        }
-
-        loginBtn.onclick = function() {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            if (username === "admin" && password === "password") {
-                qrModal.style.display = "none";
-                camera.style.display = "block";
-                startCamera();
-            } else {
-                alert("Invalid credentials");
-            }
-        }
-
-        function startCamera() {
-            navigator.mediaDevices.getUserMedia({ video: true })
-                .then(stream => {
-                    video.srcObject = stream;
-                    video.play();
-                })
-                .catch(err => {
-                    console.error("Error accessing camera: ", err);
-                });
-
-            video.addEventListener('play', () => {
-                const context = canvas.getContext('2d');
-                setInterval(() => {
-                    context.drawImage(video, 0, 0, canvas.width, canvas.height);
-                    const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-                    const code = jsQR(imageData.data, imageData.width, imageData.height);
-
-                    if (code && !scannedCodes.has(code.data)) {
-                        alert(`QR Code scanned: ${code.data}`);
-                        scannedCodes.add(code.data);
-                    }
-                }, 100);
-            });
-        }
-          </script>
           <script src="js/Home-Page.js"></script>
 </body>
 </html>
