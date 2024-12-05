@@ -1,0 +1,218 @@
+<html>
+<head>
+    <title>Responsive Tic Tac Toe Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <meta charset="UTF-8">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../images/fusion fiesta.png">
+    <link rel="stylesheet" href="../css/tic-tac-teo.css">
+</head>
+<body>
+         <!--header-->
+         <nav id="navbar">
+            <a href="../Home-Page.html" id="logo">
+                <img src="../images/fusion fiesta.png" alt="Fusion Fiesta" />
+            </a>
+            <div class="header-setting">
+                <div class="hs-toggles">
+                      <a href="../events.html" class="header-name">
+                        <span>EVENTS</span>
+                      </a>
+                    <a href="../team.html" class="header-name">
+                        <span>TEAM</span>
+                    </a>
+                      <a href="../gallery.html" class="header-name">
+                        <span>GALLERY</span>
+                      </a>
+                      <a href="../games.html" class="header-name">
+                        <span>GAMES</span>
+                      </a>
+                      <a href="../about.html" class="header-name">
+                        <span>ABOUT</span>
+                      </a>
+                    <a href="../help.html" class="header-name">
+                        <span>HELP</span>
+                    </a>
+                    <a href="../scanner.html" class="header-name">
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-qr-code-scan scanner" viewBox="0 0 20 20" >
+                          <path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5M.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5M4 4h1v1H4z"/>
+                          <path d="M7 2H2v5h5zM3 3h3v3H3zm2 8H4v1h1z"/>
+                          <path d="M7 9H2v5h5zm-4 1h3v3H3zm8-6h1v1h-1z"/>
+                          <path d="M9 2h5v5H9zm1 1v3h3V3zM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8zm2 2H9V9h1zm4 2h-1v1h-2v1h3zm-4 2v-1H8v1z"/>
+                          <path d="M12 9h2V8h-2z"/>
+                        </svg>
+                      </span>
+                  </a>
+                </div>
+            </div>
+      </nav>
+    <div class="bg-container">
+        <div class="container">
+            <h1>Tic Tac Toe</h1>
+            <div class="status" id="status">Player X's turn</div>
+            <div class="board" id="board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+        </div>
+
+        <div id="gameOverModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <p id="gameOverMessage"></p>
+                <button class="new-game" id="modalNewGameButton">New Game</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div>
+            <img src="../images/footer.png" alt="Fusion Fiesta" class="footer-logo"> 
+            <h3 class="date-footer">JANUARY 23 -24 • SCB BLOCK, ST. MARTIN'S </h3>
+            <p class="copyrights">
+              © 2025 Fusion-Fiesta, All Rights Reserved.
+            </p>
+          </div>
+  
+          <div class="hs-toggles-footer">
+            <a href="#" class="footer-name">
+              <span>EVENTS</span>
+            </a>
+          <a href="../team.html" class="footer-name">
+              <span>TEAM</span>
+          </a>
+            <a href="../gallery.html" class="footer-name">
+              <span>GALLERY</span>
+            </a>
+            <a href="../games.html" class="footer-name">
+              <span>GAMES</span>
+            </a>
+            <a href="../contact.html" class="footer-name">
+              <span>CONTACT</span>
+          </a>
+            <a href="../about.html" class="footer-name">
+              <span>ABOUT</span>
+            </a>
+          <a href="../help.html" class="footer-name">
+              <span>HELP</span>
+          </a>
+      </div>
+  
+         <div class="social-buttons">
+          <p>#fusionfiesta25</p>
+        <a href="#" class="social-button social-button--youtube" aria-label="youtube">
+         <i class="fab fa-youtube color"></i>
+       </a>
+       <a href="https://www.instagram.com/fusionfiesta_cse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-button social-button--instagram" aria-label="instagram">
+         <i class="fab fa-instagram color"></i>
+       </a>
+       <a href="#" class="social-button social-button--linkedin" aria-label="LinkedIn">
+         <i class="fab fa-linkedin-in color"></i>
+       </a>
+       <a href="#" class="social-button social-button--github" aria-label="GitHub">
+         <i class="fab fa-github color"></i>
+       </a>
+        <a href="#" class="social-button social-button--mail" aria-label="gmail">
+         <i class="fas fa-mail-bulk color"></i>
+       </a>
+         </div>
+  
+        </div>
+  
+    </footer>
+
+
+
+
+    <script>
+        const board = document.getElementById('board');
+        const statusDisplay = document.getElementById('status');
+        const cells = document.querySelectorAll('[data-cell]');
+        const gameOverModal = document.getElementById('gameOverModal');
+        const closeModal = document.getElementById('closeModal');
+        const gameOverMessage = document.getElementById('gameOverMessage');
+        const modalNewGameButton = document.getElementById('modalNewGameButton');
+        let currentPlayer = 'X';
+        let gameActive = true;
+        const winningConditions = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6]
+        ];
+
+        function handleCellClick(e) {
+            const cell = e.target;
+            const cellIndex = Array.from(cells).indexOf(cell);
+
+            if (cell.textContent !== '' || !gameActive) {
+                return;
+            }
+
+            cell.textContent = currentPlayer;
+            if (checkWin()) {
+                statusDisplay.textContent = `Player ${currentPlayer} wins!`;
+                gameOverMessage.textContent = `Player ${currentPlayer} wins!`;
+                gameActive = false;
+                showModal();
+            } else if (Array.from(cells).every(cell => cell.textContent !== '')) {
+                statusDisplay.textContent = 'Draw!';
+                gameOverMessage.textContent = 'Draw!';
+                gameActive = false;
+                showModal();
+            } else {
+                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                statusDisplay.textContent = `Player ${currentPlayer}'s turn`;
+            }
+        }
+
+        function checkWin() {
+            return winningConditions.some(condition => {
+                return condition.every(index => {
+                    return cells[index].textContent === currentPlayer;
+                });
+            });
+        }
+
+        function resetGame() {
+            cells.forEach(cell => cell.textContent = '');
+            currentPlayer = 'X';
+            gameActive = true;
+            statusDisplay.textContent = `Player ${currentPlayer}'s turn`;
+            hideModal();
+        }
+
+        function showModal() {
+            gameOverModal.style.display = 'flex';
+        }
+
+        function hideModal() {
+            gameOverModal.style.display = 'none';
+        }
+
+        cells.forEach(cell => cell.addEventListener('click', handleCellClick));
+        closeModal.addEventListener('click', hideModal);
+        modalNewGameButton.addEventListener('click', resetGame);
+    </script>
+</body>
+</html>
