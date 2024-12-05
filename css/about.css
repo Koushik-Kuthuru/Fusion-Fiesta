@@ -75,7 +75,7 @@
     text-align: center;
     height: 70px;
     position: relative;
-    left: 37%;
+    left: 35%;
     margin-left: 15px;
   }
   .hs-toggles {
@@ -105,32 +105,105 @@
       background-color: #f2e1c5;
       padding-bottom: 80px;
   }
-  .about-heading{
-      justify-content: center;
-      text-align: center;
-      padding-top: 100px;
+  .about-bg-container {
+    background: #213343;
+    padding: 50px 0;
+    padding-top: 8%;
+    color: #fff;
+    text-align: center;
+}
+.intro-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
   }
-  .about-heading h2{
-      font-family: "Agharti";
-      letter-spacing: 3px;
-      font-size: 70px;
-      margin-bottom: 5px;
-      color: #213343;
-  }
-  .about-heading p{
-      padding: 0 20%;
-      font-family: "LexendDeca";
-      line-height: 1.5em;
-      font-weight: 350;
-      letter-spacing: 1.2px;
-      color: #213343;
-  }
+.intro-container h1{
+    font-size: 80px;
+    font-family: "Agharti";
+    letter-spacing: 10px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+}
+
   .container {
       width: 100%;
       padding: 0px 10%;
       margin: 0 auto;
       text-align: center;
       padding-top: 50px;
+  }
+  .container p strong{
+    text-align: center;
+  }
+  .container p{
+    font-family: "LexendDeca";
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.8;
+  }
+  .special-thanks{
+    margin-top: 80px;
+  }
+  .special-thanks h1{
+    text-align: center;
+    color: #213343;
+    font-family: "Agharti";
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 6px;
+  }
+  .GD{
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 0 10%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  .GD img{
+    width: 40%;
+    padding: 20px 0;
+    border-radius: 50px;
+    padding-bottom: 10px; 
+  }
+  .GD h3{
+    text-align: center;
+    font-family: "LexendDeca";
+    padding-bottom: 10px;
+  }
+  .GD p{
+    text-align: justify;
+    letter-spacing: 3;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .hod{
+      background-color: white;
+      padding: 50px;
+      border-radius: 10px;
+      margin: 0 10%;
+      margin-bottom: 5%;
+  }
+  .hod h3{
+    text-align: center;
+    font-family: "LexendDeca";
+    padding-bottom: 10px;
+  }
+  .hod img{
+    width: 350px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .hod p{
+    text-align: justify;
+    letter-spacing: 3;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-top: 30px;
+    padding-left: 20px;
   }
 
 

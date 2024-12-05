@@ -71,12 +71,12 @@ body{
   color: #ffffff!important;
 }
 .header-setting {
-  float: left;
-  text-align: center;
-  height: 70px;
-  position: relative;
-  left: 37%;
-  margin-left: 15px;
+    float: left;
+    text-align: center;
+    height: 70px;
+    position: relative;
+    left: 35%;
+    margin-left: 15px;
 }
 .hs-toggles {
   padding: 5px 0;
