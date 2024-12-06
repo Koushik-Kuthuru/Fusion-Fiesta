@@ -12,14 +12,18 @@
     bottom: 90px;
     right: 30px;
     display: none;
+    font-family: 'LexendDeca';
 }
 .chat-header {
     background: #213343;
     color: #fff;
     padding: 15px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.8em;
+    letter-spacing: 0.15em;
     position: relative;
+    font-family: "Agharti";
+    text-transform: uppercase;
 }
 .chat-header .close-button {
     position: absolute;
@@ -97,4 +101,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family: 'LexendDeca';
+}
+.start-chat-button:hover{
+    transform: scale(1.08);
 }

@@ -747,7 +747,7 @@
   top: 600px;
   right: 700px;
   transition: 0.3s;
-  filter: grayscale(40%);
+  
 }
 .img-1:hover{
   width: 42%;
@@ -764,7 +764,7 @@
   right: 25px;
   top:450px;
   transition: 0.3s;
-  filter: grayscale(40%);
+  
 }
 .img-2:hover{
   width: 42%;
@@ -782,7 +782,7 @@
   right: 25px;
   top: 900px;
   transition: 0.3s;
-  filter: grayscale(40%);
+  
 }
 .img-3:hover{
   width: 42%;
@@ -800,7 +800,7 @@
   right: 400px;
   top: 370px;
   transition: 0.3s;
-  filter: grayscale(40%);
+  
 }
 .img-4:hover{
   width: 40%;
@@ -815,9 +815,9 @@
   width: 40%;
   float: right;
   top: 950px;
-  right: 1000px;
+  right: 980px;
   transition: 0.3s;
-  filter: grayscale(40%);
+  
 }
 .img-5:hover{
   width: 42%;
@@ -835,7 +835,7 @@
   right: 700px;
   top: 450px;
   transition: 0.3s;
-  filter: grayscale(40%);
+  
 }
 .img-6:hover{
   width: 42%;
@@ -851,9 +851,9 @@
   float: right;
   width: 40%;
   right: 720px;
-  top: 750px;
+  top: 780px;
   transition: 0.3s;
-  filter: grayscale(40%);
+  
 }
 .img-7:hover{
   width: 42%;
@@ -870,7 +870,7 @@
   right: 160px;
   top: 650px;
   transition: 0.3s;
-  filter: grayscale(40%);
+  
 }
 .img-8:hover{
   width: 44%;
