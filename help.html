@@ -13,6 +13,7 @@
   <link rel="icon" type="image/x-icon" href="images/fusion fiesta.png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/help-center.css">
+  <link rel="stylesheet" href="css/chatbot.css">
  </head>
  <body>
         <!--header-->
@@ -100,63 +101,108 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="footer-container">
-          <div>
-            <img src="images/footer.png" alt="Fusion Fiesta" class="footer-logo"> 
-            <h3 class="date-footer">JANUARY 23 -24 • SCB BLOCK, ST. MARTIN'S </h3>
-            <p class="copyrights">
-              © 2025 Fusion-Fiesta, All Rights Reserved.
-            </p>
-          </div>
-    
-          <div class="hs-toggles-footer">
-            <a href="#" class="footer-name">
-              <span>EVENTS</span>
-            </a>
-          <a href="team.html" class="footer-name">
-              <span>TEAM</span>
-          </a>
-            <a href="gallery.html" class="footer-name">
-              <span>GALLERY</span>
-            </a>
-            <a href="games.html" class="footer-name">
-              <span>GAMES</span>
-            </a>
-            <a href="contact.html" class="footer-name">
-              <span>CONTACT</span>
-          </a>
-            <a href="about.html" class="footer-name">
-              <span>ABOUT</span>
-            </a>
-          <a href="help.html" class="footer-name">
-              <span>HELP</span>
-          </a>
-      </div>
-    
-         <div class="social-buttons">
-          <p>#fusionfiesta25</p>
-        <a href="#" class="social-button social-button--youtube" aria-label="youtube">
-         <i class="fab fa-youtube color"></i>
-       </a>
-       <a href="https://www.instagram.com/fusionfiesta_cse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-button social-button--instagram" aria-label="instagram">
-         <i class="fab fa-instagram color"></i>
-       </a>
-       <a href="#" class="social-button social-button--linkedin" aria-label="LinkedIn">
-         <i class="fab fa-linkedin-in color"></i>
-       </a>
-       <a href="#" class="social-button social-button--github" aria-label="GitHub">
-         <i class="fab fa-github color"></i>
-       </a>
-        <a href="#" class="social-button social-button--mail" aria-label="gmail">
-         <i class="fas fa-mail-bulk color"></i>
-       </a>
-         </div>
-    
+      <div class="footer-container">
+        <div>
+          <img src="images/footer.png" alt="Fusion Fiesta" class="footer-logo"> 
+          <h3 class="date-footer">JANUARY 23 -24 • SCB BLOCK, ST. MARTIN'S </h3>
+          <p class="copyrights">
+            © 2025 Fusion-Fiesta, All Rights Reserved.
+          </p>
         </div>
-    
+  
+        <div class="hs-toggles-footer">
+          <a href="#" class="footer-name">
+            <span>EVENTS</span>
+          </a>
+        <a href="team.html" class="footer-name">
+            <span>TEAM</span>
+        </a>
+          <a href="gallery.html" class="footer-name">
+            <span>GALLERY</span>
+          </a>
+          <a href="games.html" class="footer-name">
+            <span>GAMES</span>
+          </a>
+          <a href="contact.html" class="footer-name">
+            <span>CONTACT</span>
+        </a>
+          <a href="about.html" class="footer-name">
+            <span>ABOUT</span>
+          </a>
+        <a href="help.html" class="footer-name">
+            <span>HELP</span>
+        </a>
+    </div>
+  
+       <div class="social-buttons">
+        <p>#fusionfiesta25</p>
+      <a href="#" class="social-button social-button--youtube" aria-label="youtube">
+       <i class="fab fa-youtube color"></i>
+     </a>
+     <a href="https://www.instagram.com/fusionfiesta_cse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-button social-button--instagram" aria-label="instagram">
+       <i class="fab fa-instagram color"></i>
+     </a>
+     <a href="#" class="social-button social-button--linkedin" aria-label="LinkedIn">
+       <i class="fab fa-linkedin-in color"></i>
+     </a>
+     <a href="#" class="social-button social-button--github" aria-label="GitHub">
+       <i class="fab fa-github color"></i>
+     </a>
+      <a href="#" class="social-button social-button--mail" aria-label="gmail">
+       <i class="fas fa-mail-bulk color"></i>
+     </a>
+       </div>
+      </div>
     </footer>
+
+    <div class="chat-container" id="chat-container">
+      <div class="chat-header">
+          Fusion Festa Chatbot
+          <button class="close-button" onclick="closeChat()">&times;</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+          <div class="message bot">
+              <div class="message-content">
+                  Hello! How can I assist you with the event today?
+              </div>
+          </div>
+      </div>
+      <div class="chat-input">
+          <input type="text" id="user-input" placeholder="Type a message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+          <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+      </div>
+  </div>
+
+  <button class="start-chat-button" onclick="startChat()">
+      <i class="fas fa-comments"></i> Chat with us
+  </button>
+
+    <div class="chat-container" id="chat-container">
+      <div class="chat-header">
+          Fusion Festa Chatbot
+          <button class="close-button" onclick="closeChat()">&times;</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+          <div class="message bot">
+              <div class="message-content">
+                  Hello! How can I assist you with the event today?
+              </div>
+          </div>
+      </div>
+      <div class="chat-input">
+          <input type="text" id="user-input" placeholder="Type a message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+          <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+      </div>
+  </div>
+
+  <button class="start-chat-button" onclick="startChat()">
+      <i class="fas fa-comments"></i> Chat with us
+  </button>
+
     
-        <script src="js/Home-Page.js"></script>
+        <script src="js/Home-Page.js" ></script>
+<script src="js/chatbot.js"></script>
+        <script src="js/chatbot.js"></script>
     <script>
         document.querySelectorAll('.faq-question').forEach(item => {
             item.addEventListener('click', () => {

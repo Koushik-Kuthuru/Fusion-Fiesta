@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/Home-page.css">
+    <link rel="stylesheet" href="css/chatbot.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -200,7 +201,7 @@
 
       <div class="recap-video">
         <video controls>
-          <source src="images/bg-1.MP4" type="video/mp4">
+          <source src="images/FFrecap.mp4" type="video/mp4">
         </video>
       </div>
     </div>
@@ -329,21 +330,14 @@
     <img src="images/Beat-Bash.png" alt="Beat Bash" class="event-img">
     <p class="event-date">Beat Bash is the art of vocal percussion, where artists create rhythmic sounds and beats using the mouth, lips, tongue, and voice.</p>
     <a href="beat-bash.html"><button class="card-btn">more info</button></a>
-</div>
-<div class="events-card">
-  <p class="event-date">Thursday,  Jan 23rd, 9.30AM - 10:40AM</p>
-  <h3 class="event-name">Stylewood</h3>
-  <img src="images/Stylewood.jpg" alt="Stylewood" class="event-img">
-  <p class="event-date">The Stylewood is a lively showcase of student with in their unique outfits. The energy in the air was palpable as peers cheered and self-expression on the runway.</p>
-  <a href="stylewood.html"><button class="card-btn">more info</button></a>
-</div>
-<div class="events-card">
-  <p class="event-date">Thursday,  Jan 23rd, 9.30AM - 10:40AM</p>
-  <h3 class="event-name">Mirror Mimic</h3>
-  <img src="images/Mirror-Mimic-Fest.jpg" alt="Mirror Mimic" class="event-img">
-  <p class="event-date">Mirror Mimic is the voice mimicry, the art of imitating others' voices and sounds to entertain and engage audiences.</p>
-  <a href="mirror-mimic.html"><button class="card-btn">more info</button></a>
-</div>
+  </div>
+  <div class="events-card">
+    <p class="event-date">Thursday,  Jan 23rd, 9.30AM - 10:40AM</p>
+    <h3 class="event-name">Stylewood</h3>
+    <img src="images/Stylewood.jpg" alt="Stylewood" class="event-img">
+    <p class="event-date">The Stylewood is a lively showcase of student with in their unique outfits. The energy in the air was palpable as peers cheered and self-expression on the runway.</p>
+    <a href="stylewood.html"><button class="card-btn">more info</button></a>
+  </div>
 
         </div>
     </section>
@@ -463,12 +457,35 @@
 
       </div>
 
-  </footer>
+    </footer>
+
+    <div class="chat-container" id="chat-container">
+      <div class="chat-header">
+          Fusion Festa Chatbot
+          <button class="close-button" onclick="closeChat()">&times;</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+          <div class="message bot">
+              <div class="message-content">
+                  Hello! How can I assist you with the event today?
+              </div>
+          </div>
+      </div>
+      <div class="chat-input">
+          <input type="text" id="user-input" placeholder="Type a message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+          <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+      </div>
+  </div>
+
+  <button class="start-chat-button" onclick="startChat()">
+      <i class="fas fa-comments"></i> Chat with us
+  </button>
 
 </main>
 
 
 <script src="js/Home-Page.js" ></script>
+<script src="js/chatbot.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script><!--countdown-->
       
 </body>

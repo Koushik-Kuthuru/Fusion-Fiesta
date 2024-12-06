@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/film-fiesta.css">
+    <link rel="stylesheet" href="css/chatbot.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -170,7 +171,29 @@
       
             </div>
       
-        </footer>
+          </footer>
+
+    <div class="chat-container" id="chat-container">
+      <div class="chat-header">
+          Fusion Festa Chatbot
+          <button class="close-button" onclick="closeChat()">&times;</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+          <div class="message bot">
+              <div class="message-content">
+                  Hello! How can I assist you with the event today?
+              </div>
+          </div>
+      </div>
+      <div class="chat-input">
+          <input type="text" id="user-input" placeholder="Type a message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+          <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+      </div>
+  </div>
+
+  <button class="start-chat-button" onclick="startChat()">
+      <i class="fas fa-comments"></i> Chat with us
+  </button>
 
     
                           <script>
@@ -189,6 +212,7 @@
               }
             </script>
 
-          <script src="js/Home-Page.js"></script>
+          <script src="js/Home-Page.js" ></script>
+<script src="js/chatbot.js"></script>
 </body>
 </html>

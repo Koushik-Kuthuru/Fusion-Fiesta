@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/chess.css">
+    <link rel="stylesheet" href="css/chatbot.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -94,22 +95,29 @@
               <div>
               <div id="details" class="section active">
                   <ul>
-                      <li>Point 1: This is an example point.</li>
-                      <li>Point 2: This is another example point.</li>
-                      <li>Point 3: Yet another example point.</li>
-                      <li>Point 4: Example point number four.</li>
-                      <li>Point 5: Example point number five.</li>
-                      <li>Point 6: Example point number six.</li>
-                      <li>Point 7: Example point number seven.</li>
+                    <ul>
+                      <li>• The event consists of three rounds: pattern creation, cube solving, and speed-solving.</li>
+                      <li>• The event organizers will provide a standard 3x3 Rubik’s Cube for each participant.</li>
+                      <li>• In Round 1, participants will replicate displayed patterns on the provided cube within the given time.</li>
+                      <li>• In Round 2, participants will solve a scrambled cube within 10 minutes. All participants who solve the cube in this time will qualify for the next round.</li>
+                      <li>• Round 3 will be a speed-solving round to determine the top three winners based on the fastest time.</li>
+                      <li>• Prizes will be awarded to the 1st  and 2nd winners, along with certificates.</li>
+                      <li>• All rounds will be timed using an official timer or app for fairness.</li>
                   </ul>
               </div>
-              <div id="timeline" class="section">
-                  <h2>Timeline</h2>
-                  <p>Timeline content goes here.</p>
-              </div>
               <div id="rules" class="section">
-                  <h2>General Rules</h2>
-                  <p>General rules content goes here.</p>
+                <ul>
+                  <li>• Participants must follow the instructions provided before each round.</li> 
+                  <li>• Only the provided Rubik's Cube may be used; no personal or modified cubes are allowed.</li> 
+                  <li>• Each participant will have 15 seconds to inspect their provided cube before solving.</li> 
+                  <li>• Patterns in Round 1 must exactly match the displayed images to qualify.</li> 
+                  <li>• In Round 2, all participants who solve the cube within 10 minutes will qualify for Round 3.</li> 
+                  <li>• Round 3 will determine the top three winners based on the fastest time.Participants are allowed only one attempt per round unless stated otherwise.</li> 
+                  <li>• Timing will stop only when the participant completes the task and raises their hand.</li> 
+                  <li>• Judges' decisions on accuracy and timing are final and cannot be contested.</li> 
+                  <li>• Participants must maintain a fair and sportsmanlike attitude throughout the event.</li> 
+                  <li>• Any misconduct or rule violation may result in immediate disqualification.</li> 
+                </ul>
               </div>
               <div id="contact" class="section contact-section">
                   <div class="contact-card">
@@ -182,7 +190,29 @@
       
             </div>
       
-        </footer>
+          </footer>
+
+    <div class="chat-container" id="chat-container">
+      <div class="chat-header">
+          Fusion Festa Chatbot
+          <button class="close-button" onclick="closeChat()">&times;</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+          <div class="message bot">
+              <div class="message-content">
+                  Hello! How can I assist you with the event today?
+              </div>
+          </div>
+      </div>
+      <div class="chat-input">
+          <input type="text" id="user-input" placeholder="Type a message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+          <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+      </div>
+  </div>
+
+  <button class="start-chat-button" onclick="startChat()">
+      <i class="fas fa-comments"></i> Chat with us
+  </button>
 
     
                           <script>
@@ -201,6 +231,7 @@
               }
             </script>
 
-          <script src="js/Home-Page.js"></script>
+          <script src="js/Home-Page.js" ></script>
+<script src="js/chatbot.js"></script>
 </body>
 </html>
