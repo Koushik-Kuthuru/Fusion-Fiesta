@@ -100,7 +100,7 @@
   
   /*HEADER ENDS
   ---------------------------------------------------*/
-.help-bg-container {
+.CAMPUS-bg-container {
     background: #213343;
     padding: 50px 0;
     padding-top: 8%;
@@ -113,7 +113,7 @@
     margin: 0 auto;
     text-align: center;
   }
-.help-bg-container h1{
+.CAMPUS-bg-container h1{
     font-size: 75px;
     font-family: "Agharti";
     letter-spacing: 10;
@@ -121,7 +121,7 @@
     text-transform: uppercase;
 }
 
-.bg-help-container-1 {
+.bg-CAMPUS-container-1 {
     width: 100%;
     margin: 0 auto;
     padding: 80px 15%;
