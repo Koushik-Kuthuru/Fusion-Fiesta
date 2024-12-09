@@ -9,13 +9,14 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    bottom: 110px;
+    bottom: 115px;
     right: 30px;
     display: none;
     font-family: 'LexendDeca';
+    z-index: 8;
 }
 .chat-header {
-    background: #213343;
+    background: linear-gradient(to right, #e91e63, #ff5722);
     color: #fff;
     padding: 15px;
     text-align: center;
@@ -49,7 +50,7 @@
     background: #e9e9eb;
 }
 .chat-messages::-webkit-scrollbar-thumb {
-    background-color: #213343;
+    background: linear-gradient(to right, #e91e63, #ff5722);
     border-radius: 10px;
 }
 .message {
@@ -57,12 +58,12 @@
     display: flex;
 }
 .message.bot .message-content {
-    background: #e9e9eb;
-    color: #333;
+    background: #213343;
+    color: #fff
 }
 .message.user .message-content {
-    background: #213343;
-    color: #fff;
+    background: #f2e1c5;
+    color: #213343;
     margin-left: auto;
 }
 .message-content {
@@ -81,7 +82,7 @@
     outline: none;
 }
 .chat-input button {
-    background: #213343;
+    background: linear-gradient(to right, #e91e63, #ff5722);
     color: #fff;
     border: none;
     padding: 0 20px;
@@ -91,7 +92,7 @@
     position: fixed;
     bottom: 40px;
     right: 30px;
-    background: #213343;
+    background: linear-gradient(to right, #e91e63, #ff5722);
     color: #fff;
     border: none;
     padding: 20px 20px;
@@ -102,11 +103,25 @@
     align-items: center;
     gap: 10px;
     font-family: 'LexendDeca';
+    transition: background 0.3s, transform 0.3s;
+    z-index: 8;
 }
 .start-chat-button svg{
-    height: 25px;
-    width: 25px;
+    height: 27px;
+    width: 27px;
 }
-.start-chat-button:hover{
-    transform: scale(1.08);
+
+
+.start-chat-button.close {
+    background: linear-gradient(to right, #e91e63, #ff5722);
+    transform: scale(1.1); 
+    border-radius: 50%;
+    padding: 18px 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 8;
+}
+.start-chat-button.close svg{
+    height: 27px;
+    width: 27px;
 }
