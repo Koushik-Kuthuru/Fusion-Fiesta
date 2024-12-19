@@ -96,7 +96,7 @@
     color: #fff;
     border: none;
     padding: 20px 20px;
-    border-radius: 50%;
+    border-radius: 50px 10px 50px 50px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -115,7 +115,7 @@
 .start-chat-button.close {
     background: linear-gradient(to right, #e91e63, #ff5722);
     transform: scale(1.1); 
-    border-radius: 50%;
+    border-radius: 50px 10px 50px 50px;
     padding: 18px 18px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -124,4 +124,18 @@
 .start-chat-button.close svg{
     height: 27px;
     width: 27px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .chat-container {
+        max-width: 375px;
+    }
+    .start-chat-button {
+        right: 20px;
+    }
+    .chat-container {
+        right: 20px;
+    }
+
 }

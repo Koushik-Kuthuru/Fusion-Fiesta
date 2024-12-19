@@ -2,15 +2,108 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/chatbot.css">
         <title>Sudoku</title>
 
         <style>
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-                background-color: #f2e1c5;
-                padding-top: 6%;
-            }
+@font-face {
+  font-family:'LexendDeca';
+  src: url('../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+
+        body {
+            margin: 0;
+            width: 100%;
+            background-color: #f2e1c5;
+            font-family: "LexendDeca";
+            overflow-x: hidden;
+        }
+        .sudoko-con{
+            padding: 8% 0;
+            text-align: center;
+        }
+        /*header starts*/
+ #navbar {
+  background: white;
+  height: 70px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 102;
+  padding: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(10px);
+  margin-top: 40px;
+  transition: top 0.8s;
+}
+
+
+#navbar #logo {
+  display: block;
+  height: 10px;
+  margin: 5px;
+  float: left;
+}
+#navbar #logo img {
+  width: 50px;
+}
+#logo {
+  position: relative;
+  top: 6px;
+  left: 30px;
+}
+
+#navbar #logo span {
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff!important;
+}
+.header-setting {
+    float: left;
+    text-align: center;
+    height: 70px;
+    position: relative;
+    left: 35%;
+    margin-left: 15px;
+}
+.hs-toggles {
+  padding: 5px 0;
+}
+.header-name {
+position: relative;
+  font-size: 16px;
+  top: 20px;
+  font-weight:450;
+  line-height: 20px;
+  padding: 20px;
+  padding-right: 25px;
+  color: black;
+  font-family:'LexendDeca';
+  text-decoration: none;
+}
+.header-name:hover{
+  color: #ff5c35;
+}
+.scanner{
+position: absolute;
+}
+/*header ends*/
 
             hr {
                 width: 500px;
@@ -79,10 +172,144 @@
             .vertical-line {
                 border-right: 1px solid black;
             }
+            
+ /*footer*/
+ .footer{
+  background-color:#213343;
+  height: 25vh;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.footer-container{
+  padding: 45px 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-logo{
+  height: auto; 
+  width: 300px;
+  position: relative;
+}
+.date-footer{
+  font-family: 'LexendDeca';
+  color: #949393;
+  position: relative;
+  left: 10px;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+}
+.copyrights{
+  color: white;
+  font-family: 'LexendDeca';
+  font-size: 10px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.hs-toggles-footer {
+  position: relative;
+  left: 23%;
+}
+.footer-name {
+  position: relative;
+    font-size: 15px;
+    top: 30px;
+    line-height: 20px;
+    padding: 20px;
+    padding-right: 15px;
+    color: #ffffff;
+    font-family:'LexendDeca';
+    font-weight: 500;
+    text-decoration: none;
+}
+.social-buttons{
+  font-size: 25px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  top: 100px;
+}
+.social-buttons p{
+  color: grey;
+  position: absolute;
+  font-size: 18px;
+  top: -8px;
+  left: -150px;
+  font-family: 'LexendDeca';
+}
+.social-buttons a.fab {
+  display: inline-block;;
+  margin: 8px 0 8px 0px;
+}
+
+.social-buttons a {
+  font-size: 0.64em;
+  padding-right: 0.6em;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 10px;
+}
+.social-buttons a {
+  display: inline-block;
+  border-radius: var(--ap-border-radius);
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background-color: #213343;
+  padding: 16px;
+  border-radius: 50%;
+  border: grey solid 0.3px;
+  transition: 1s;
+}
+.color{
+  color: white;
+}
+
+/*footer ends*/
         </style>
     </head>
 
     <body>
+
+            <!--header-->
+    <nav id="navbar">
+        <a href="../Home-Page.html" id="logo">
+            <img src="../images/fusion fiesta.png" alt="Fusion Fiesta" />
+        </a>
+        <div class="header-setting">
+            <div class="hs-toggles">
+                  <a href="../events.html" class="header-name">
+                    <span>EVENTS</span>
+                  </a>
+                <a href="../team.html" class="header-name">
+                    <span>TEAM</span>
+                </a>
+                  <a href="../gallery.html" class="header-name">
+                    <span>GALLERY</span>
+                  </a>
+                  <a href="../games.html" class="header-name">
+                    <span>GAMES</span>
+                  </a>
+                  <a href="../about.html" class="header-name">
+                    <span>ABOUT</span>
+                  </a>
+                <a href="../CAMPUS.html" class="header-name">
+                    <span>CAMPUS</span>
+                </a>
+                <a href="../scanner.html" class="header-name">
+                  <span>CONTACT</span>
+              </a>
+            </div>
+        </div>
+  </nav>
+
+    <div class="sudoko-con">
         <h1>Sudoku</h1>
         <hr style=" background-color: #213343; height: 3px;">
         <h2 id="errors">0</h2>
@@ -92,7 +319,7 @@
         <br>
         <div id="digits">
         </div>
-
+    </div>
         <footer class="footer">
             <div class="footer-container">
               <div>
@@ -276,6 +503,8 @@
 
 
             </script>
+            <script src="../js/Home-Page.js"></script>
+            <script src="../js/chatbot.js"></script>
     
         </body>
 </html>

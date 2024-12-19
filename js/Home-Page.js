@@ -15,6 +15,7 @@ window.addEventListener("scroll", function() {
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 });
 
+/*
     // Cursor 
 
 const overlay = document.getElementById('overlay');
@@ -55,7 +56,57 @@ container.addEventListener('mouseup', () => {
     overlay.style.width = '0px'; // Small size
     overlay.style.height = '0px'; // Small size
 });
+*/
 
+// Cursor 
+
+const overlay = document.getElementById('overlay');
+const container = document.getElementById('container');
+
+let isMoving = false;
+
+// Function to check if the screen is mobile
+function isMobile() {
+    return window.innerWidth < 768; // Adjust the breakpoint as needed
+}
+
+container.addEventListener('mousemove', (e) => {
+    if (isMobile()) return; // Skip the cursor effect on mobile
+
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    overlay.style.left = `${x - overlay.clientWidth / 2}px`;
+    overlay.style.top = `${y - overlay.clientHeight / 2}px`;
+
+    // Enlarge the overlay when moving
+    overlay.style.width = '400px'; // Larger size
+    overlay.style.height = '400px'; // Larger size
+
+    isMoving = true;
+
+    // Reset the size after a short delay
+    clearTimeout(overlay.timer);
+    overlay.timer = setTimeout(() => {
+        overlay.style.width = '0px'; // Small size
+        overlay.style.height = '0px'; // Small size
+        isMoving = false;
+    }, 200); // Adjust the delay as needed
+});
+
+// Optional: To keep the circle enlarged while the mouse is down
+container.addEventListener('mousedown', () => {
+    if (isMobile()) return; // Skip the cursor effect on mobile
+    overlay.style.width = '400px'; // Larger size
+    overlay.style.height = '400px'; // Larger size
+});
+
+container.addEventListener('mouseup', () => {
+    if (isMobile()) return; // Skip the cursor effect on mobile
+    overlay.style.width = '0px'; // Small size
+    overlay.style.height = '0px'; // Small size
+});
 
 /*countdown*/
 window.addEventListener('load', () => {

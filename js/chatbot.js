@@ -89,10 +89,10 @@ function getBotResponse(message) {
     /* Events or events schedule*/
     else if (lowerCaseMessage.includes('event schedule') || (lowerCaseMessage.includes('schedule')) || (lowerCaseMessage.includes('events list')) || (lowerCaseMessage.includes('events'))) {
         if (lowerCaseMessage.includes('day-1')) {
-            return "The morning schedule is as follows: Opening Ceremony at 9 AM, Keynote Speech at 10 AM.";
+            return "1.Inauguration 2.Rangoli Radiance 3.Crafty Corner 4.Cube Mixing 5.Prototype Parade 6.Flavor Fiesta 7.Chess 8.Error Hunt 9.Tech Trivia 10.Howzatt Trivia 11.Arena Blitz 12.Film Fiesta 13.Flash Frenzy ";
         } 
         else if (lowerCaseMessage.includes('day-2')) {
-            return "The afternoon schedule is as follows: Lunch Break at 12 PM, Workshops at 1 PM.";
+            return "";
         } 
         else {
             return "The event schedule is as follows: Opening Ceremony at 9 AM, Keynote Speech at 10 AM, Lunch Break at 12 PM, Workshops at 1 PM, Networking Session at 4 PM, and Closing Ceremony at 5 PM.";
