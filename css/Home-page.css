@@ -73,6 +73,9 @@
     font-weight: 600;
     color: #ffffff!important;
 }
+.mobile-menu {
+  display: none;
+}
 .header-setting {
     float: left;
     text-align: center;
@@ -511,6 +514,7 @@
       margin-top: 10px;
     }
     .why-h5{
+      position: relative;
       height:50px;
       color: black;
       font-family: 'LexendDeca';
@@ -1078,8 +1082,19 @@
 
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+/*Medium mobile devices (e.g., iPhone 6/7/8):*/
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  /* styles here */
+}
+
+/*Large mobile devices (e.g., iPhone 6/7/8 Plus):*/
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+/* styles here */
+}  
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
 
   html{
     background-color: #213343;
@@ -1092,10 +1107,9 @@
     overflow-x: hidden; /* Prevent horizontal overflow */
   }
   #navbar {
-    width: 88%;
+    width: auto;
     height: 60px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 5% ;
     margin-top: 20px;
     overflow: hidden;
 }
@@ -1116,11 +1130,96 @@
 .header-name {
   display: none;
 }
+.menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  top: 17px;
+  float: right;
+  right: 20px;
+}
+
+.menu-icon div {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-icon div:nth-child(1) {
+  top: 0;
+}
+
+.menu-icon div:nth-child(2) {
+  top: 10px;
+}
+
+.menu-icon div:nth-child(3) {
+  top: 20px;
+}
+
+.menu-icon.open div:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menu-icon.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open div:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 5%;
+  margin-right: 5%;
+  position: absolute;
+  margin-top: 76px;
+  height: 100%;
+  width: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 200;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: height .40s ease;
+}
+
+.mobile-menu a {
+  padding: 15px;
+  text-decoration: none;
+  color: #213343;
+  font-family: "LexendDeca";
+  font-size: 4vw;
+  font-weight: 500;
+  transition: .35s ease;
+  padding-left: 40px;
+}
+
+.mobile-menu a:hover {
+  background-color: #f4f4f4;
+}
+
+.mobile-menu a:last-child {
+  border-bottom: none;
+}
+
 
 /*bg-container-1*/
 
 .bg-container-1{
-  height: 70vh; 
+  height: 100%; 
 }
 #container {
 height: 70vh;
@@ -1138,17 +1237,18 @@ height: 70vh;
   background-color: rgba(252, 244, 236, 0.85);
 }
 .ff-text {
-  font-size: 28px; 
+  font-size: 100%; 
 }
 .ff-text h3{
-  font-size: 12px;
+  font-size: 3vw;
 }
 .ff-text h1{
-  font-size: 75px;
-  letter-spacing: 6px;
+  font-size: 18vw;
+  letter-spacing: 0.5vw;
+  margin-bottom: 7%;
 }
 .ff-text p{
-  font-size: 12px;
+  font-size: 2.5vw;
   padding: 0 2px;
   margin-bottom: 0;
 }
@@ -1160,7 +1260,7 @@ height: 70vh;
 
 }
 .title {
-  font-size: 0.48em;
+  font-size: 3vw;
   letter-spacing: 3px;
 }
 .time-elem {
@@ -1173,10 +1273,11 @@ height: 70vh;
 
 /*bg-container-2*/
 .bg-container-2{
-  height: 145vh;
+  height: 100%;
   padding-left: 1%;
   padding-right: 1%;
-  padding-bottom: 50px;
+  padding-bottom: 5%;
+  padding-top: 10%;
   text-align: center;
 }
 .bg-container-2 img{
@@ -1193,100 +1294,108 @@ height: 70vh;
   margin-right: 5%;
 }
 .block-name h2{
-  font-size: 40px;
+  font-size: 8vw;
   text-align: center;
 }
 .block-name p{
   left: 0px;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 16px;
+  font-size: 3.5vw;
   text-align: justify;
   letter-spacing: 1px;
 }
 /*bg-container-3*/
 .bg-container-3{
-  height: 210vh;
-  padding-left: 6%;
-  padding-right: 6%;
+  height: auto;
+  padding: 1% 5%;
 }
 .why{
-  font-size: 32.5px;
+  position: relative;
+  font-size: 100%;
   top: 20px;
 }
 .why h2{
-  letter-spacing: 3.5px;
-  font-size: 80px;
-  margin-top: 70px;
-  margin-left: 10px;
-  margin-bottom: 60px;
-}
-
-.recap-video video{
-  width: 90%;
-  height: 200px;
-  position: absolute;
-  top: 90em;
-  justify-items: center;
-  margin: 0;
+  letter-spacing: 0.5vw;
+  font-size: 16vw;
+  margin-top: 15%;
+  margin-left: 6%;
+  margin-bottom: 20px;
 }
 
 .why-bg-2-container{
   margin: 0 0 0 0;
-  padding: 0 20px 0 20px;
-  position:absolute;
+  padding: 0 0px 0 0px;
+  position:relative;
   float: left;
-  top: 360px;
+  top: 80px;
   left: 0%;
   }
   .why-column {
     float: left;
-    width: 60%;
-    height: 20%;
+    width: 100%;
+    height: 100%;
     margin-bottom: 16px;
-    margin-right: 10px;
-    padding: 0 8px;
+    margin-right: 0px;
+    padding: 0 2%;
   }
   .why-card {
     border-radius: 15px;
     padding: 20px;
     background-color:white;
     height: 250px;
-    width: 360px;
+    width: 100%;
+  }
+  .why-card:hover{
+    display: none;
   }
   .why-container {
     padding:0;
   }
   
   .why-h2{
-    font-size: 30px;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-size: 8vw;
+    letter-spacing: 0.5vw;
+    margin: 3% 0 ;
     text-align: left;
   }
   .why-h5{
     height:0px;
-    font-size: 14px;
-    margin: 5px;
+    font-size: 3.5vw;
+    margin: 3%;
     font-weight: 300;
     line-height: 1.5;
-    margin-left: 5px;
+    margin-left: 0;
     text-decoration: none;
-    letter-spacing: 1px;
+    text-align: justify;
+    letter-spacing: 0.2vw;
     font-style: italic;
+  }
+  .recap-video{
+    position: relative;
+    top: 500px;
+  }
+  .recap-video video{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 10%;
+    justify-items: center;
+    margin: 0;
   }
 
 /*bg-container-4*/
 .bg-container-4{
-  height: 70vh;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  height: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .events-category {
-  font-size: 62px;
-  margin-bottom: 25px;
+  font-size: 15vw;
+  margin-bottom: 5%;
 }
 .events-container {
   padding: 0 8vw;
@@ -1306,29 +1415,29 @@ height: 70vh;
 .event-date{
   color: black;
   font-family: 'LexendDeca';
-  font-size: 9.2px;
+  font-size: 2.1vw;
   font-weight: 350;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1vw;
   margin: 10px 0px 20px 0px;
   font-style: italic;
 }
 .event-name{
-  font-size: 18.8px;
+  font-size: 4.74vw;
   font-family: 'LexendDeca';
   font-weight: 600;
   text-transform: capitalize;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.1vw;
   margin: 15px 0px 15px 0px;
 }
 .event-img{
-  width: 180px;
+  width: 100%;
   height: 120px;
 }
 
 .card-btn {
   padding: 5px;
   width: 180px;
-  font-size: 9.2px;
+  font-size: 3vw;
 }
 
 .events-card:hover .card-btn {
@@ -1347,25 +1456,27 @@ height: 70vh;
 /*bg-container-5*/
 .bg-container-5{
   height: 75vh;
+  padding: 0 5%;
   padding-top: 20px;
 }
 .snaps-heading-container{
   left: 5px;
-  padding: 0 5vw;
+  padding: 0 0;
 }
 .snaps-heading-container h2{
-  font-size: 70px;
+  font-size: 16vw;
   top: 5px;
   line-height: 1;
-  letter-spacing: 4px;
+  letter-spacing:  1vw;
 }
 .snaps-heading-container p{
-font-size: 15px;
+font-size: 3.5vw;
 top: 10px;
 left: 0px;
 }
 .snaps-container{
 top: -10px;
+padding: 0;
 }
 .img-1{
 position: absolute;
@@ -1468,22 +1579,24 @@ right: 42px;
 
 /* bg- container 6*/
 .bg-container-6{
-  height: 50vh;
+  height: 100%;
 }
 .overlay-vedio h2{
-  font-size: 3em;
-  margin: 15px 0px;
-  letter-spacing: 3px;
+  font-size: 8vw;
+  margin: 2% 0px;
+  letter-spacing: 0.5vw;
   text-shadow: 1.5px 2px rgba(134, 133, 133, 0.9);
-  top: 60%;
+  top: 40%;
 }
 .overlay-vedio a{
-  padding: 8px 18px;
-  font-size: 15px;
+  top: 40%;
+  padding: 4px 14px;
+  font-size: 3vw;
 }
 
 .bg-container-7{
-  padding: 0 20px ;
+  height: 100%;
+  padding: 5% 5% ;
 }
 .bg-7-card-container{
   display: block;
@@ -1493,7 +1606,7 @@ right: 42px;
 .card-bg-7{
   padding: 15px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
 .card-bg-7 img{
     border-radius: 50%;
@@ -1505,19 +1618,20 @@ right: 42px;
   margin-left: 20px;
 }
 .card-content-bg-7 h2{
-  letter-spacing: 2px;
-  font-size: 19px;
+  letter-spacing: 0.5vw;
+  font-size: 6vw;
 }
 .card-content-bg-7 p{
-  font-size: 12px;
+  font-size: 2.5vw;
   margin: 5px 0;
 }
 .card-content-bg-7 a{
-  font-size: 12px;
+  font-size: 3vw;
 }
+
 /*footer*/
  .footer{
-  height: 43vh;
+  height: 45vh;
   padding: 5px;
   padding-left: 5%;
   padding-right: 5%;
@@ -1528,13 +1642,14 @@ right: 42px;
 }
 .footer-logo{
   height: auto; 
-  width: 300px;
+  width: 70%;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
 }
 .date-footer{
-  left: 15px;
-  font-size: 12px;
+  left: 4%;
+  font-size: 2.5vw;
+  margin:0;
 }
 .copyrights{
   top: 10px;
@@ -1543,12 +1658,65 @@ right: 42px;
     float: left;
     left: -80px;
     padding: 10px;
+    font-size: 4vw;
 }
 .social-buttons{
   top: 120px;
-  left: -290px;
+  left: -320px;
   width: 600px;
 }
 
 /*footer ends*/
 }
+
+/*Small tablets (e.g., iPad Mini):*/
+@media only screen and (min-width: 415px) and (max-width: 639px) {
+  /* styles here */
+}
+
+/*Medium tablets (e.g., iPad):*/
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  /* styles here */
+}
+
+/*Large tablets (e.g., iPad mini):*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Laptop with a screen size of 1366x768 pixels */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+}
+
+/* Laptop with a screen size of 1440x900 pixels */
+@media only screen and (min-width: 1440px) and (max-width: 1440px) {
+  /* styles here */
+}
+
+/* Laptop with a screen size of 1600x900 pixels */
+@media only screen and (min-width: 1600px) and (max-width: 1600px) {
+  /* styles here */
+}
+
+/* Laptop with a screen size of 1920x1080 pixels */
+@media only screen and (min-width: 1920px) and (max-width: 1920px) {
+  /* styles here */
+}
+
+/* Laptop with a screen size of 2560x1440 pixels */
+@media only screen and (min-width: 2560px) and (max-width: 2560px) {
+  /* styles here */
+}
+
+
+
+@media only screen and (min-width: 900px) {
+  /*your css style for size larger than 900px*/
+}
+/*-0------------------------------------------------------------------------*/
+/*MAIN*/
+@media only screen and (min-width: 1024px) {
+ 
+}
+
+
+

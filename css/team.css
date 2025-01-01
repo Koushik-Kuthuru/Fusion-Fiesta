@@ -70,6 +70,9 @@ body{
   font-weight: 600;
   color: #ffffff!important;
 }
+.mobile-menu {
+  display: none;
+}
 .header-setting {
     float: left;
     text-align: center;
@@ -206,7 +209,6 @@ position: absolute;
     display: inline-block;
     margin: 0 1.7%;
     margin-bottom: 120px;
-
   }
  
   .flip-card-inner {
@@ -388,3 +390,302 @@ position: absolute;
 }
 
 /*footer ends*/
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0; /* Remove default body margin */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  #navbar {
+    width: auto;
+    height: 60px;
+    margin: 0 5% ;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#navbar #logo {
+  display: block;
+  height: 20px;
+  margin: 3px;
+  float: left;
+}
+#navbar #logo img {
+  width: 40px;
+}
+#logo {
+  position: relative;
+  top: 6px;
+  left: 20px;
+}
+.header-name {
+  display: none;
+}
+.menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  top: 17px;
+  float: right;
+  right: 20px;
+}
+
+.menu-icon div {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-icon div:nth-child(1) {
+  top: 0;
+}
+
+.menu-icon div:nth-child(2) {
+  top: 10px;
+}
+
+.menu-icon div:nth-child(3) {
+  top: 20px;
+}
+
+.menu-icon.open div:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menu-icon.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open div:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 5%;
+  margin-right: 5%;
+  position: absolute;
+  margin-top: 76px;
+  height: 100%;
+  width: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 200;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: height .40s ease;
+}
+
+.mobile-menu a {
+  padding: 15px;
+  text-decoration: none;
+  color: #213343;
+  font-family: "LexendDeca";
+  font-size: 4vw;
+  font-weight: 500;
+  transition: .35s ease;
+  padding-left: 40px;
+}
+
+.mobile-menu a:hover {
+  background-color: #f4f4f4;
+}
+
+.mobile-menu a:last-child {
+  border-bottom: none;
+}
+
+
+.team-heading{
+  padding-top: 14vw;
+}
+.team-heading h2{
+  font-size: 15vw;
+}
+.team-heading p{
+  padding: 0 5%;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 3.5vw;
+}
+.container {
+  width: 100%;
+  padding: 0px 0;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 8%;
+}
+.tabs {
+  display: flex;
+  background-color: white;
+  margin: 0 7.5%;
+  justify-content: center;
+  margin-bottom: 50px;
+  border: #213343 solid 1px;
+  border-radius: 20px;
+  padding: 0 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 85%;
+
+}
+.tabs button{
+  background-color: white;
+}
+.tab {
+  padding: 10px 15px;
+  border-radius: 15px;
+  width: 100%;
+  margin: 0 0px;
+  cursor: pointer;
+  color: #213343;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Agharti";
+  letter-spacing:0.5vw;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 4vw;
+  border: none;
+}
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  display: inline-block;
+  margin: 0 1.7%;
+  margin-bottom: 120px;
+}
+.kkk{
+  display: none;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 20px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 20px ;
+}
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.flip-card-front h3 {
+  margin: 15px 0 5px;
+  font-size: 1.4em;
+  color: #343a40;
+  font-family: "LexendDeca";
+  font-style: 500;
+}
+.flip-card-front p {
+  margin: 0;
+  color: #55585a;
+  font-family: "LexendDeca";
+  font-size: 16px;
+}
+
+.flip-card-back {
+  background-color: #213343;
+  border-radius: 20px;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+}
+.flip-card-back h1{
+  font-family: "LexendDeca";
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.flip-card-back p{
+  font-family: "LexendDeca";
+  letter-spacing: 1.5px;
+  line-height: 1;
+  font-size: 14px;
+}
+.hidden {
+  display: none;
+}
+.social-links-team{
+  justify-content: center;
+  display: flex;
+  gap: 15px;
+  margin-top: 18px;
+}
+.social-links-team img{
+  width: 40px;
+}
+
+/*footer*/
+.footer{
+  height: 45vh;
+  padding: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.footer-container{
+  padding: 25px 0 5px;
+  display: block;
+}
+.footer-logo{
+  height: auto; 
+  width: 70%;
+  position: relative;
+  margin-bottom: 2%;
+}
+.date-footer{
+  left: 4%;
+  font-size: 2.5vw;
+  margin:0;
+}
+.copyrights{
+  top: 10px;
+}
+.footer-name {
+    float: left;
+    left: -80px;
+    padding: 10px;
+    font-size: 4vw;
+}
+.social-buttons{
+  top: 120px;
+  left: -320px;
+  width: 600px;
+}
+
+/*footer ends*/
+
+}

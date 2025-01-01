@@ -1,20 +1,33 @@
-/*hidden nav bar */
 let lastScrollTop = 0;
-const navbar = document.getElementById("navbar");
+const navbar = document.getElementById('navbar'); // Replace with your navbar's ID
+const mobileThreshold = 50; // Adjust this value as needed
 
-window.addEventListener("scroll", function() {
-    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (currentScroll > lastScrollTop) {
-        // Scrolling down
-        navbar.style.top = "-120px"; // Hide the navbar (adjust based on navbar height)
-    } else {
-        // Scrolling up
-        navbar.style.top = "0"; // Show the navbar
+    if (window.innerWidth > 768) { // Desktop
+        if (currentScroll > lastScrollTop) {
+            // Scrolling down
+            navbar.style.top = "-120px"; // Hide the navbar (adjust based on navbar height)
+        } else {
+            // Scrolling up
+            navbar.style.top = "0"; // Show the navbar
+        }
+    } else { // Mobile
+        if (currentScroll > lastScrollTop) {
+            // Scrolling down
+            navbar.style.top = "-120px"; // Hide the navbar
+        } else {
+            // Scrolling up
+            if (currentScroll < mobileThreshold) {
+                // If scrolled back to the top
+                navbar.style.top = "0"; // Show the navbar
+            }
+        }
     }
+
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 });
-
 /*
     // Cursor 
 
@@ -222,3 +235,31 @@ eventsContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+
+document.getElementById('menu-button').addEventListener('click', function() {
+    var menu = document.getElementById('mobile-menu');
+    var icon = this;
+
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'flex';
+        menu.style.height = 'auto'; // Set to auto to get the full height
+        const fullHeight = menu.scrollHeight + 'px'; // Get the full height
+        menu.style.height = '0px'; // Set to 0 for animation
+        setTimeout(() => {
+            menu.style.height = fullHeight; // Animate to full height
+        }, 10);
+        icon.classList.add('open');
+        myFunction(icon); // Toggle the button's class
+    } else {
+        menu.style.height = '0px';
+        menu.addEventListener('transitionend', function() {
+            menu.style.display = 'none';
+        }, { once: true });
+        icon.classList.remove('open');
+        myFunction(icon); // Toggle the button's class
+    }
+});
