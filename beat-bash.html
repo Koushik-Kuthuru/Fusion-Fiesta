@@ -18,36 +18,66 @@
 </head>
 <body>
         <!--header-->
-        <nav id="navbar">
-            <a href="index.html" id="logo">
-                <img src="images/fusion fiesta.png" alt="Fusion Fiesta" />
+  <nav>
+    <div id="navbar">
+      <a href="index.html" id="logo">
+        <img src="images/fusion fiesta.png" alt="Fusion Fiesta" />
+    </a>
+    
+    <div class="menu-icon" id="menu-button">
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+    <div class="header-setting">
+        <div class="hs-toggles">
+              <a href="events.html" class="header-name">
+                <span>EVENTS</span>
+              </a>
+            <a href="team.html" class="header-name">
+                <span>TEAM</span>
             </a>
-            <div class="header-setting">
-                <div class="hs-toggles">
-                      <a href="events.html" class="header-name">
-                        <span>EVENTS</span>
-                      </a>
-                    <a href="team.html" class="header-name">
-                        <span>TEAM</span>
-                    </a>
-                      <a href="gallery.html" class="header-name">
-                        <span>GALLERY</span>
-                      </a>
-                      <a href="games.html" class="header-name">
-                        <span>GAMES</span>
-                      </a>
-                      <a href="about.html" class="header-name">
-                        <span>ABOUT</span>
-                      </a>
-                    <a href="CAMPUS.html" class="header-name">
-                        <span>CAMPUS</span>
-                    </a>
-                    <a href="#" class="header-name" id="qrScannerBtn">
-                      <span>CONTACT</span>
-                  </a>
-                </div>
-            </div>
-          </nav>
+              <a href="gallery.html" class="header-name">
+                <span>GALLERY</span>
+              </a>
+              <a href="games.html" class="header-name">
+                <span>GAMES</span>
+              </a>
+              <a href="#" class="header-name">
+                <span>CAMPUS</span>
+            </a>
+              <a href="about.html" class="header-name">
+                <span>ABOUT</span>
+              </a>
+
+            <!--<a href="scanner.html" class="header-name">
+              <span>CONTACT</span>
+          </a>-->
+        </div>
+    </div> 
+    </div>
+ 
+    <div class="mobile-menu" id="mobile-menu">
+     <a href="events.html">
+                <span>EVENTS</span>
+              </a>
+            <a href="team.html">
+                <span>TEAM</span>
+            </a>
+              <a href="gallery.html">
+                <span>GALLERY</span>
+              </a>
+              <a href="games.html">
+                <span>GAMES</span>
+              </a>
+              <a href="#">
+                <span>CAMPUS</span>
+            </a>
+              <a href="about.html">
+                <span>ABOUT</span>
+              </a>
+    </div>
+  </nav>
         <!--body-->
             <div class="events-image-bg">
                 <img src="images/Beat-Bash-banner.jpg" alt="project-parade">
@@ -116,7 +146,7 @@
               </div>
       
               <div class="hs-toggles-footer">
-                <a href="#" class="footer-name">
+                <a href="events.html" class="footer-name">
                   <span>EVENTS</span>
                 </a>
               <a href="team.html" class="footer-name">
@@ -206,6 +236,7 @@
             </script>
 
           <script src="js/Home-Page.js" ></script>
+<script src="js/mobile-menu.js"></script>
 <script src="js/chatbot.js"></script>
 </body>
 </html>

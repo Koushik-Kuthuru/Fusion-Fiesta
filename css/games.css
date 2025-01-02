@@ -68,6 +68,12 @@
     font-weight: 600;
     color: #ffffff!important;
   }
+  .mobile-menu{
+    display: none;
+  }
+  .mobile-menu{
+    display: none;
+  }
   .header-setting {
     float: left;
     text-align: center;
@@ -124,8 +130,7 @@
     width: 100%;
     margin-top: 6rem;
     padding: 0 10%;
-    margin-bottom: 6rem;
-    
+    margin-bottom: 6rem;   
 }
 .game-grid {
     display: grid;
@@ -276,16 +281,15 @@
   
   /*footer ends*/
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     body {
       margin: 0; /* Remove default body margin */
       overflow-x: hidden; /* Prevent horizontal overflow */
     }
     #navbar {
-      width: 88%;
+      width: auto;
       height: 60px;
-      margin-left: 6%;
-      margin-right: 6%;
+      margin: 0 5% ;
       margin-top: 20px;
       overflow: hidden;
   }
@@ -306,52 +310,142 @@
   .header-name {
     display: none;
   }
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    transition: transform 0.3s ease;
+    top: 17px;
+    float: right;
+    right: 20px;
+  }
+  
+  .menu-icon div {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .menu-icon div:nth-child(1) {
+    top: 0;
+  }
+  
+  .menu-icon div:nth-child(2) {
+    top: 10px;
+  }
+  
+  .menu-icon div:nth-child(3) {
+    top: 20px;
+  }
+  
+  .menu-icon.open div:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  
+  .menu-icon.open div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.open div:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute;
+    margin-top: 76px;
+    height: 100%;
+    width: 90%;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 200;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: height .40s ease;
+  }
+  
+  .mobile-menu a {
+    padding: 15px;
+    text-decoration: none;
+    color: #213343;
+    font-family: "LexendDeca";
+    font-size: 4vw;
+    font-weight: 500;
+    transition: .35s ease;
+    padding-left: 40px;
+  }
+  
+  .mobile-menu a:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
   .games-bg-container {
     padding: 20px 0;
     padding-top: 22%;
 }
 .games-bg-container h1{
-    font-size: 60px;
+    font-size: 14vw;
+    letter-spacing: 2vw;
 }
 .bg-2-container {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-  /*footer*/
-  .footer{
-    height: 43vh;
-    padding: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .footer-container{
-    padding: 25px 0 5px;
-    display: block;
-  }
-  .footer-logo{
-    height: auto; 
-    width: 300px;
-    position: relative;
-    margin-bottom: 5px;
-  }
-  .date-footer{
-    left: 15px;
-    font-size: 12px;
-  }
-  .copyrights{
-    top: 10px;
-  }
-  .footer-name {
-      float: left;
-      left: -80px;
-      padding: 10px;
-  }
-  .social-buttons{
-    top: 120px;
-    left: -290px;
-    width: 600px;
-  }
-  
-  /*footer ends*/
+.game-grid {
+  gap: 8vw;
+}
+/*footer*/
+.footer{
+  height: 45vh;
+  padding: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.footer-container{
+  padding: 25px 0 5px;
+  display: block;
+}
+.footer-logo{
+  height: auto; 
+  width: 70%;
+  position: relative;
+  margin-bottom: 2%;
+}
+.date-footer{
+  left: 4%;
+  font-size: 2.5vw;
+  margin:0;
+}
+.copyrights{
+  top: 10px;
+}
+.footer-name {
+    float: left;
+    left: -80px;
+    padding: 10px;
+    font-size: 4vw;
+}
+.social-buttons{
+  top: 120px;
+  left: -320px;
+  width: 600px;
+}
+
+/*footer ends*/
   
   }

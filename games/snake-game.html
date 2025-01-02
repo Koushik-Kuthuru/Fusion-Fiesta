@@ -75,6 +75,9 @@
   font-weight: 600;
   color: #ffffff!important;
 }
+.mobile-menu{
+  display: none;
+}
 .header-setting {
     float: left;
     text-align: center;
@@ -210,6 +213,7 @@ position: absolute;
 
  /*footer*/
  .footer{
+  display: none;
   background-color:#213343;
   height: 25vh;
   width: 100%;
@@ -318,39 +322,247 @@ position: absolute;
                 margin-left: 20px;
             }
         }
+        @media screen and (max-width: 768px) {
+    body {
+      margin: 0; /* Remove default body margin */
+      overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+    #navbar {
+      width: auto;
+      height: 60px;
+      margin: 0 5% ;
+      margin-top: 20px;
+      overflow: hidden;
+  }
+  #navbar #logo {
+    display: block;
+    height: 20px;
+    margin: 3px;
+    float: left;
+  }
+  #navbar #logo img {
+    width: 40px;
+  }
+  #logo {
+    position: relative;
+    top: 6px;
+    left: 20px;
+  }
+  .header-name {
+    display: none;
+  }
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    transition: transform 0.3s ease;
+    top: 17px;
+    float: right;
+    right: 20px;
+  }
+  
+  .menu-icon div {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .menu-icon div:nth-child(1) {
+    top: 0;
+  }
+  
+  .menu-icon div:nth-child(2) {
+    top: 10px;
+  }
+  
+  .menu-icon div:nth-child(3) {
+    top: 20px;
+  }
+  
+  .menu-icon.open div:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  
+  .menu-icon.open div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.open div:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute;
+    margin-top: 76px;
+    height: 100%;
+    width: 90%;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 200;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: height .40s ease;
+  }
+  
+  .mobile-menu a {
+    padding: 15px;
+    text-decoration: none;
+    color: #213343;
+    font-family: "LexendDeca";
+    font-size: 4vw;
+    font-weight: 500;
+    transition: .35s ease;
+    padding-left: 40px;
+  }
+  
+  .mobile-menu a:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+  .score-board {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  canvas {
+    width: 85vw;
+  }
+          .high-scores {
+            top: 2%;
+            left: 0;
+        }
+        .game-container {
+            margin-top: 6vw;
+        }
+        .game-over{
+          width: 60vw;
+        }
+        .start-game {
+          width: 70vw;
+        }
+
+/*footer*/
+.footer{
+  display:none;
+  height: 45vh;
+  padding: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.footer-container{
+  padding: 25px 0 5px;
+  display: block;
+}
+.footer-logo{
+  height: auto; 
+  width: 70%;
+  position: relative;
+  margin-bottom: 2%;
+}
+.date-footer{
+  left: 4%;
+  font-size: 2.5vw;
+  margin:0;
+}
+.copyrights{
+  top: 10px;
+}
+.footer-name {
+    float: left;
+    left: -80px;
+    padding: 10px;
+    font-size: 4vw;
+}
+.social-buttons{
+  top: 120px;
+  left: -320px;
+  width: 600px;
+}
+
+/*footer ends*/
+  
+  }
     </style>
 </head>
 <body>
-    <!--header-->
-    <nav id="navbar">
-        <a href="../index.html" id="logo">
-            <img src="../images/fusion fiesta.png" alt="Fusion Fiesta" />
-        </a>
-        <div class="header-setting">
-            <div class="hs-toggles">
-                  <a href="../events.html" class="header-name">
-                    <span>EVENTS</span>
-                  </a>
-                <a href="../team.html" class="header-name">
-                    <span>TEAM</span>
-                </a>
-                  <a href="../gallery.html" class="header-name">
-                    <span>GALLERY</span>
-                  </a>
-                  <a href="../games.html" class="header-name">
-                    <span>GAMES</span>
-                  </a>
-                  <a href="../about.html" class="header-name">
-                    <span>ABOUT</span>
-                  </a>
-                <a href="../CAMPUS.html" class="header-name">
-                    <span>CAMPUS</span>
-                </a>
-                <a href="../scanner.html" class="header-name">
-                  <span>CONTACT</span>
+  <nav>
+    <div id="navbar">
+      <a href="../index.html" id="logo">
+        <img src="../images/fusion fiesta.png" alt="Fusion Fiesta" />
+    </a>
+    
+    <div class="menu-icon" id="menu-button">
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+    <div class="header-setting">
+        <div class="hs-toggles">
+              <a href="../events.html" class="header-name">
+                <span>EVENTS</span>
               </a>
-            </div>
+            <a href="../team.html" class="header-name">
+                <span>TEAM</span>
+            </a>
+              <a href="../gallery.html" class="header-name">
+                <span>GALLERY</span>
+              </a>
+              <a href="../games.html" class="header-name">
+                <span>GAMES</span>
+              </a>
+              <a href="../#" class="header-name">
+                <span>CAMPUS</span>
+            </a>
+              <a href="../about.html" class="header-name">
+                <span>ABOUT</span>
+              </a>
+
+            <!--<a href="scanner.html" class="header-name">
+              <span>CONTACT</span>
+          </a>-->
         </div>
+    </div> 
+    </div>
+ 
+    <div class="mobile-menu" id="mobile-menu">
+     <a href="../events.html">
+                <span>EVENTS</span>
+              </a>
+            <a href="../team.html">
+                <span>TEAM</span>
+            </a>
+              <a href="../gallery.html">
+                <span>GALLERY</span>
+              </a>
+              <a href="../games.html">
+                <span>GAMES</span>
+              </a>
+              <a href="#">
+                <span>CAMPUS</span>
+            </a>
+              <a href="../about.html">
+                <span>ABOUT</span>
+              </a>
+    </div>
   </nav>
 
     <div class="container">
@@ -665,7 +877,8 @@ position: absolute;
 
         checkPlayerName();
     </script>
-    <script src="../js/Home-Page.js"></script>
+     <script src="../js/Home-Page.js" ></script>
+<script src="../js/mobile-menu.js"></script>
     <script src="../js/chatbot.js"></script>
 </body>
 </html>

@@ -236,6 +236,7 @@ eventsContainers.forEach((item, i) => {
     })
 })
 
+
 function myFunction(x) {
     x.classList.toggle("change");
 }

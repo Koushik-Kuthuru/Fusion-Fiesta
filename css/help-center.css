@@ -68,6 +68,9 @@
     font-weight: 600;
     color: #ffffff!important;
   }
+  .mobile-menu{
+    display: none;
+  }
   .header-setting {
     float: left;
     text-align: center;

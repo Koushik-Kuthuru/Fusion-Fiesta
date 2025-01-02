@@ -28,7 +28,7 @@
 #navbar {
     background: white;
     height: 70px;
-    width: 80%;
+    width: auto;
     margin-left: 10%;
     margin-right: 10%;
     position: fixed;
@@ -65,6 +65,12 @@
     font-size: 20px;
     font-weight: 600;
     color: #ffffff!important;
+  }
+  .mobile-menu{
+    display: none;
+  }
+  .mobile-menu{
+    display: none;
   }
   .header-setting {
     float: left;
@@ -424,16 +430,18 @@
 
 /*footer ends*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body {
-    margin: 0; /* Remove default body margin */
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    margin: 0; 
+    overflow-x: hidden; 
+  }
+  html{
+    overflow-x: hidden; 
   }
   #navbar {
-    width: 88%;
+    width: auto;
     height: 60px;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin: 0 5% ;
     margin-top: 20px;
     overflow: hidden;
 }
@@ -451,13 +459,98 @@
   top: 6px;
   left: 20px;
 }
+.menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  top: 17px;
+  float: right;
+  right: 20px;
+}
+
+.menu-icon div {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-icon div:nth-child(1) {
+  top: 0;
+}
+
+.menu-icon div:nth-child(2) {
+  top: 10px;
+}
+
+.menu-icon div:nth-child(3) {
+  top: 20px;
+}
+
+.menu-icon.open div:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menu-icon.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open div:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 5%;
+  margin-right: 5%;
+  position: absolute;
+  margin-top: 76px;
+  height: 100%;
+  width: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 200;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: height .40s ease;
+}
+
+.mobile-menu a {
+  padding: 15px;
+  text-decoration: none;
+  color: #213343;
+  font-family: "LexendDeca";
+  font-size: 4vw;
+  font-weight: 500;
+  transition: .35s ease;
+  padding-left: 40px;
+}
+
+.mobile-menu a:hover {
+  background-color: #f4f4f4;
+}
+
+.mobile-menu a:last-child {
+  border-bottom: none;
+}
+
 .header-name {
   display: none;
 }
 .events-image-bg{
   background: #FFF5E1;
   color: #fff;
-  padding-bottom: 40px;
+  padding-bottom: 15vw;
 }
 .events-image-bg img{
   margin: 0;
@@ -467,36 +560,36 @@
 }
 .overlay-events{
   position: absolute;
-  top: 30%;
-  left: 12.5%;
+  top: 55vw;
+  left: 8vw;
   z-index: 1;
 }
 .overlay-events h1{
   font-family: "Agharti";
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 60px;
-  line-height: 30px;
+  letter-spacing: 1vw;
+  font-size: 15vw;
+  line-height: 5vw;
   color: #213343;
   text-align: left;
 }
-strong{
+.overlay-events h1 strong{
   font-size: 1px;
 }
 .overlay-events span{
   font-family: "LexendDeca";
-  font-size: 14px;
+  font-size: 3.25vw;
   letter-spacing: 1px;
   position: relative;
-  line-height: 30px;
+  line-height: 5vw;
   top: 0px;
 }
 .overlay-events p{
   font-family: "LexendDeca";
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 3.25vw;
+  letter-spacing: 0.1vw;
   position: relative;
-  line-height: 20px;
+  line-height: 5vw;
   top: 0px;
   text-transform: capitalize;
 }
@@ -508,10 +601,10 @@ strong{
 .about-container{
   position: relative;
   text-align: center;
-  margin: 0 10%;
-  margin-top: 225px;
-  margin-bottom: 40px;
-  padding: 10px;
+  margin: 0 7vw;
+  margin-top: 47vw;
+  margin-bottom: 12vw;
+  padding: 2.5vw;
   border-radius: 20px;
   background-color: #f2e1c5;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -519,15 +612,15 @@ strong{
 .about-container h1{
   color: #213343;
   font-family: "LexendDeca";
-  font-size: 25px;
+  font-size: 6.5vw;
   margin: 8px 0;
 }
 .about-container p{
   color: #213343;
   font-family: "LexendDeca";
-  font-size: 12px;
-  letter-spacing: 1px;
-  margin: 10px 10px;    
+  font-size: 3vw;
+  letter-spacing: 0.2vw;
+  margin: 2.5vw;    
   text-align: justify;
 }
 .details {
@@ -537,14 +630,14 @@ strong{
   padding: 10px 10px;
   border: #213343 solid 1px;
   border-bottom: none;
-  margin: 0 10% ;
+  margin: 0 7vw ;
 }
 .details a {
   color: #fff;
   text-decoration: none;
   margin: 0 2.5px;
-  font-size: 12px;
-  padding: 10px 15px;
+  font-size: 3.2vw;
+  padding: 1vw 4vw;
   font-family: "LexendDeca";
   font-weight: 600;
 }
@@ -585,10 +678,8 @@ line-height: 2;
   background-color: #ffffff;
   color: #213343;
   margin: 0;
-  margin: 0 10%;
-  font-size: 12px;
-  font-family: 'LexendDeca';
-  border: #213343 solid 1px;
+  margin: 0 7vw;
+  font-size: 3.5vw;
 
 }
 .section.active {
