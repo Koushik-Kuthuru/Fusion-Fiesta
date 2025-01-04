@@ -435,3 +435,23 @@ padding-left: 0px;
   /*footer ends*/
   
   }
+  /* Media Queries for 13 to 14-inch laptops */
+@media (min-width: 1280px) and (max-width: 1440px) {
+  #navbar{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+  }
+  .footer{
+    height: 30vh;
+    padding: 5px 5vw;
+  }
+  .hs-toggles-footer {
+    position: relative;
+    left: 13%;
+  }
+  .social-buttons{
+    top: -6vh;
+    left: 70%;
+  }
+}

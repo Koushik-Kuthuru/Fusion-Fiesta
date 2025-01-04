@@ -35,7 +35,7 @@
    #navbar {
     background: white;
     height: 70px;
-    width: 80%;
+    width: auto;
     margin-left: 10%;
     margin-right: 10%;
     position: fixed;
@@ -817,7 +817,6 @@
   right: 700px;
   top: 450px;
   transition: 0.3s;
-  
 }
 .img-6:hover{
   width: 42%;
@@ -1081,17 +1080,283 @@
 /*footer ends*/
 
 
-
-
-/*Medium mobile devices (e.g., iPhone 6/7/8):*/
-@media only screen and (min-width: 321px) and (max-width: 375px) {
-  /* styles here */
+/* Media Queries for 13 to 14-inch laptops */
+@media (min-width: 1280px) and (max-width: 1370px) {
+  html{
+    height: 590vh;
+    width: 100%;
+  }
+  #navbar{
+    margin-left: 5vw;
+    margin-right: 5vw
+  }
+  /*bg-container-1*/
+  .bg-container-1{
+    height: 100%;
+  }
+  .ff-text h3{
+    font-size: 1vw;
+  }
+  .ff-text h1{
+    font-size: 9vw;
+  }
+  .ff-text p{
+    font-size: 1vw;
+  }
+  .countdown-main{
+    margin-top: -10px;
+  }
+  .title{
+    font-size: 1.1vw;
+  }
+  .time-elem{
+    height: 60px;
+    width: 70px;
+    font-size: 30px;
+  }
+  .bottom::before{
+    top: -5px;
+  }
+  .bg-container-2 img{
+    top: 16%;
+  }
+  .block-name h2{
+    font-size: 3vw;
+  }
+  .block-name p {
+    font-size: 1vw;
+  }
+  /*bg-container-3*/
+.why h2{
+  font-size: 7vw;
+  letter-spacing: 0.5vw;
+}
+.why-card{
+  height: 12vw;
+  margin: 0;
+}
+.why-container {
+  padding: 0;
+}
+.why-h2{
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  padding: 0;
+  margin: 5px;
+}
+.why-h5{
+  font-size: 11.5px;
+}
+/*bg-container-4*/
+.bg-container-4{
+  height: 100%;
+  padding-bottom: 50px;
+}
+.img-1{
+  width: 35vw;
+  top: 600px;
+  right: 650px;
+}
+.img-1:hover{
+  right: 650px;
+}
+.img-2{
+  width: 35vw;
+}
+.img-3{
+  width: 35vw;
+  right: 65px;
+  top: 800px;
+}
+.img-3:hover{
+  right: 65px;
+  top: 800px;
+}
+.img-4{
+  width: 35vw;
+}
+.img-5{
+  width: 35vw;
+  top: 800px;
+  right: 850px;
+}
+.img-5:hover{
+  top: 800px;
+  right: 700px;
+}
+.img-6{
+  width: 35vw;
+  right: 650px;
+  top: 480px;
+}
+.img-7{
+  width: 35vw;
+  right: 600px;
+  top: 680px;
+}
+.img-7:hover{
+  right: 600px;
+  top: 680px;
+}
+.img-8{
+  width: 35vw;
+  right: 190px;
+  top: 600px;
+}
+.footer{
+  height: 30vh;
+}
+.hs-toggles-footer {
+  position: relative;
+  left: 13%;
+}
+.social-buttons{
+  top: -6vh;
+  left: 70%;
+}
 }
 
-/*Large mobile devices (e.g., iPhone 6/7/8 Plus):*/
-@media only screen and (min-width: 376px) and (max-width: 414px) {
-/* styles here */
-}  
+/* Media Queries for 15 to 16-inch laptops */
+@media (min-width: 1370px) and (max-width: 1600px) {
+  html{
+    height: 590vh;
+    width: 100%;
+  }
+  #navbar{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  /*bg-container-1*/
+  .bg-container-1{
+    height: 100%;
+  }
+  .ff-text h3{
+    font-size: 1.5vw;
+  }
+  .ff-text h1{
+    font-size: 10vw;
+  }
+  .ff-text p{
+    font-size: 1.2vw;
+  }
+  .countdown-main{
+    margin-top: -10px;
+  }
+  .title{
+    font-size: 1.1vw;
+  }
+  .bg-container-2 img{
+    top: 22.5%;
+  }
+  .block-name{
+    top: 90%;
+  }
+  .block-name h2{
+    font-size: 4vw;
+  }
+  .block-name p {
+    font-size: 1.2vw;
+    text-align: justify;
+  }
+  /*bg-container-3*/
+  .bg-container-3{
+    height: 120vh;
+  }
+.why h2{
+  font-size: 7vw;
+  letter-spacing: 0.5vw;
+}
+.why-card{
+  height: 12vw;
+  margin: 0;
+}
+.why-container {
+  padding: 0;
+}
+.why-h2{
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  padding: 0;
+  margin: 5px;
+}
+.why-h5{
+  font-size: 11.5px;
+}
+.recap-video video{
+  top: 50%;
+}
+/*bg-container-4*/
+.bg-container-4{
+  height: 100%;
+  padding-bottom: 50px;
+}
+.bg-container-5{
+  height: 130vh;
+}
+.img-1{
+  width: 35vw;
+  top: 600px;
+  right: 650px;
+}
+.img-1:hover{
+  right: 650px;
+}
+.img-2{
+  width: 35vw;
+}
+.img-3{
+  width: 35vw;
+  right: 65px;
+  top: 800px;
+}
+.img-3:hover{
+  right: 65px;
+  top: 800px;
+}
+.img-4{
+  width: 35vw;
+}
+.img-5{
+  width: 35vw;
+  top: 800px;
+  right: 850px;
+}
+.img-5:hover{
+  top: 800px;
+  right: 700px;
+}
+.img-6{
+  width: 35vw;
+  right: 650px;
+  top: 480px;
+}
+.img-7{
+  width: 35vw;
+  right: 600px;
+  top: 680px;
+}
+.img-7:hover{
+  right: 600px;
+  top: 680px;
+}
+.img-8{
+  width: 35vw;
+  right: 190px;
+  top: 600px;
+}
+.footer{
+  height: 28vh;
+  padding: 5px 5vw;
+}
+.hs-toggles-footer {
+  position: relative;
+  left: 13%;
+}
+.social-buttons{
+  top: -2vh;
+  left: 70%;
+}
+}
 
 /* Extra small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
@@ -1668,55 +1933,3 @@ right: 42px;
 
 /*footer ends*/
 }
-
-/*Small tablets (e.g., iPad Mini):*/
-@media only screen and (min-width: 415px) and (max-width: 639px) {
-  /* styles here */
-}
-
-/*Medium tablets (e.g., iPad):*/
-@media only screen and (min-width: 640px) and (max-width: 767px) {
-  /* styles here */
-}
-
-/*Large tablets (e.g., iPad mini):*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-}
-
-/* Laptop with a screen size of 1366x768 pixels */
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
-}
-
-/* Laptop with a screen size of 1440x900 pixels */
-@media only screen and (min-width: 1440px) and (max-width: 1440px) {
-  /* styles here */
-}
-
-/* Laptop with a screen size of 1600x900 pixels */
-@media only screen and (min-width: 1600px) and (max-width: 1600px) {
-  /* styles here */
-}
-
-/* Laptop with a screen size of 1920x1080 pixels */
-@media only screen and (min-width: 1920px) and (max-width: 1920px) {
-  /* styles here */
-}
-
-/* Laptop with a screen size of 2560x1440 pixels */
-@media only screen and (min-width: 2560px) and (max-width: 2560px) {
-  /* styles here */
-}
-
-
-
-@media only screen and (min-width: 900px) {
-  /*your css style for size larger than 900px*/
-}
-/*-0------------------------------------------------------------------------*/
-/*MAIN*/
-@media only screen and (min-width: 1024px) {
- 
-}
-
-
-

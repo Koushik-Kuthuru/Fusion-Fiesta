@@ -582,3 +582,22 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   /*footer ends*/
 
 }
+@media (min-width: 1280px) and (max-width: 1440px) {
+  #navbar{
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .footer{
+    height: 30vh;
+    padding: 5px 5vw;
+  }
+  .hs-toggles-footer {
+    position: relative;
+    left: 13%;
+  }
+  .social-buttons{
+    top: -2vh;
+    left: 70%;
+  }
+}
