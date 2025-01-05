@@ -3,56 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotating and Zooming Image</title>
+    <title>Full Screen Video</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: transparent; /* Background color */
+            overflow: hidden; /* Prevent scrollbars */
         }
-        .image-container {
-            overflow: hidden; /* Hide overflow to prevent showing parts of the image outside the container */
-            width: auto; /* Set a fixed width */
-            height: auto; /* Set a fixed height */
-            border-radius: 15px; /* Optional: rounded corners */
-        }
-        .rotating-image {
-            width: 100%; /* Make the image fill the container */
-            height: 100%; /* Make the image fill the container */
-            animation: rotateZoom 5s infinite; /* Animation for rotation and zoom */
-        }
-        @keyframes rotateZoom {
-            0% {
-                transform: rotate(0deg) scale(1); /* Start at original size */
-            }
-            50% {
-                transform: rotate(180deg) scale(1.2); /* Rotate and zoom in */
-            }
-            100% {
-                transform: rotate(360deg) scale(1.4); /* Rotate back to original size */
-            }
-            150% {
-                transform: rotate(360deg) scale(1.8); /* Rotate back to original size */
-            }
-            200% {
-                transform: rotate(360deg) scale(2); /* Rotate back to original size */
-            }
-
+        video {
+            position: absolute; /* Position the video absolutely */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            min-width: 100%; /* Ensure the video covers the full width */
+            min-height: 100%; /* Ensure the video covers the full height */
+            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            transform: translate(-50%, -50%); /* Center the video */
         }
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="images/fusion fiesta.png" alt="Rotating Image" class="rotating-image"> <!-- Replace with your image URL -->
-    </div>
+    <video id="myVideo" autoplay muted>
+        <source src="images/website-intro.mp4" type="video/mp4"> <!-- Replace with your video URL -->
+        Your browser does not support the video tag.
+    </video>
     <script>
-        // Redirect to the main page after a delay
-        setTimeout(function() {
+        // Get the video element
+        const video = document.getElementById('myVideo');
+
+        // Redirect to the main page when the video ends
+        video.addEventListener('ended', function() {
             window.location.href = "index.html"; // Change to your main page URL
-        }, 3000); // Adjust the time as needed (10000ms = 10 seconds)
+        });
     </script>
 </body>
 </html>

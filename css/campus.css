@@ -146,10 +146,345 @@
     font-family: 'LexendDeca';
     text-transform: uppercase;
     letter-spacing: 1;
-    font-size: 4vw;
+    font-size: 4.5vw;
     text-shadow: 3px 2px rgba(0, 0, 0, 0.5);
     margin: 25px 0px;
     position: relative;
     top: 40%;
   }
+/**/
+  .campus-bg-container-2{
+    background-color: #f2e1c5;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 1vw 0;
+    padding-left: 8vw;
+    padding-right:8vw;
+    padding-bottom: 4vw;
+  }
+  .campus-bg-container-2 h2{
+    font-family: "Agharti";
+    font-size: 5.5vw;
+    color: #213343;
+    text-align: center;
+    letter-spacing: 0.5vw;
+    margin: 2vw 0;
+  }
+  .campus-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vw;
+  }
+  @media (min-width: 768px) {
+    .campus-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .campus-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .campus-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .campus-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .campus-card img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 16px;
+    padding-bottom: 10px;
+  }
+  .campus-card h2 {
+    font-family: "LexendDeca";
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
+    font-weight: 700;
+    margin: 0;
+    padding: 16px 16px;
+    padding-top: 0;
+  }
+  .campus-bg-container-3{
+    background-color: #213343;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 4vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+.campus-bg-container-3 h2{
+    font-family: "Agharti";
+    font-size: 4.5vw;
+    color: #fff;
+    text-align: left;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    margin: 2vw 0;
+    padding-top: 2vw;
+  }
+  .campus-bg-container-3 iframe{
+    padding: 2vw 5vw;
+    height: 75vh;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .campus-bg-container-4{
+    background-color: #f2e1c5;
+    height: 100%;
+    width: 100%;
+    padding: 3vw 0;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+.campus-bg-container-4 h2{
+    font-family: "Agharti";
+    font-size: 5vw;
+    color: #213343;
+    text-align: left;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    margin: 2vw 0;
+    margin-top: 0;
+  }
+  .campus-clubs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3vw;
+  }
+  @media (min-width: 768px) {
+    .campus-clubs-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .campus-clubs-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .campus-clubs-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .campus-clubs-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .campus-clubs-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 5% 5% 0 5%;
+    border-radius: 10%;
+  }
+  .campus-clubs-card h2 {
+    font-family: "LexendDeca";
+    font-size: 0.9vw;
+    letter-spacing: 0.1vw;
+    font-weight: 700;
+    margin: 0;
+    padding: 16px 16px;
+    text-align: center;
+  }
+  .campus-bg-container-5{
+    background-color: #213343;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 4vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+.campus-bg-container-5 h2{
+    font-family: "Agharti";
+    font-size: 4.5vw;
+    color: #fff;
+    text-align: left;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    margin: 2vw 0;
+    padding-top: 2vw;
+  }
+  .campus-bg-container-5 iframe{
+    height: 75vh;
+    width: 100%;
+  }
+  .campus-bg-container-6{
+    background-color: #f2e1c5;
+    height: 100%;
+    width: 100%;
+    padding: 3vw 0;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+.campus-bg-container-6 h2{
+    font-family: "LexendDeca";
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #213343;
+    text-align: left;
+    letter-spacing: 0;
+    margin: 2vw 0;
+    margin-top: 0;
+  }
+  .follow-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vw;
+    width: 20vw;
+  }
+  @media (min-width: 768px) {
+    .follow-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .follow-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .follow-grid  a{
+    height: 13vh;
+    width: 20vw;
+  }
+  .follow-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 70%;
+    width: 20vw;
+  }
+  .follow-card-container{
+    margin-left: 4.5vw;
+    position: relative;
+    top: -4.9vw;
+  }
+  .follow-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .follow-card img {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 3.3% 0 3.3% 0.5vw;
+    border-radius: 50%;
+  }
+  .follow-card h2 {
+    font-family: "LexendDeca";
+    font-size: 1.45vw;
+    letter-spacing: 0.1vw;
+    font-weight: 700;
+    margin: 0;
+    padding: 1.15vw 0.5vw 1.15vw 0.5vw;
+    text-align: left;
+  }
+  /*footer*/
+ .footer{
+    background-color:#213343;
+    height: 25vh;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: -5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .footer-container{
+    padding: 45px 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-logo{
+    height: auto; 
+    width: 300px;
+    position: relative;
+  }
+  .date-footer{
+    font-family: 'LexendDeca';
+    color: #949393;
+    position: relative;
+    left: 10px;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+  }
+  .copyrights{
+    color: white;
+    font-size: 10px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+  .hs-toggles-footer {
+    position: relative;
+    left: 23%;
+  }
+  .footer-name {
+    position: relative;
+      font-size: 15px;
+      top: 30px;
+      line-height: 20px;
+      padding: 20px;
+      padding-right: 15px;
+      color: #ffffff;
+      font-family:'LexendDeca';
+      font-weight: 500;
+  }
+  .social-buttons{
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 100px;
+  }
+  .social-buttons p{
+    color: grey;
+    position: absolute;
+    font-size: 18px;
+    top: -8px;
+    left: -150px;
+    font-family: 'LexendDeca';
+  }
+  .social-buttons a.fab {
+    display: inline-block;;
+    margin: 8px 0 8px 0px;
+  }
+  
+  .social-buttons a {
+    font-size: 0.64em;
+    padding-right: 0.6em;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .social-buttons a {
+    display: inline-block;
+    border-radius: var(--ap-border-radius);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: #213343;
+    padding: 10px;
+    border-radius: 50%;
+    border: grey solid 0.3px;
+    transition: 1s;
+  }
+  .color{
+    color: white;
+  }
+  
+  /*footer ends*/
   

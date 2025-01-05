@@ -1,0 +1,43 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Video Ad with Disappearing Overlay</title> <style> body, html { margin: 0; padding: 0; height: 200%; /* Extend height for scrolling */ overflow: hidden; /* Prevent scrollbars */ }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Send video to back */
+        }
+    
+        .overlay {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            background-color: white; /* Background color */
+            transform: translate(-50%, -50%);
+            opacity: 1; /* Fully visible */
+            transition: opacity 0.3s; /* Smooth transition */
+            z-index: 1; /* Bring overlay to front */
+        }
+    </style>
+    </head> <body>
+    <video class="background-video" autoplay muted loop>
+        <source src="images/campus-tour.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="overlay"></div>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            const overlay = document.querySelector('.overlay');
+            const scrollY = window.scrollY;
+    
+            // Calculate new opacity based on scroll position
+            const newOpacity = 1 - (scrollY / 500); // Adjust divisor for effect duration
+            overlay.style.opacity = newOpacity < 0 ? 0 : newOpacity; // Prevent negative opacity
+        });
+    </script>
+    </body> </html>
