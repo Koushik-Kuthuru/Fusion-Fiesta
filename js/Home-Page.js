@@ -71,7 +71,7 @@ container.addEventListener('mouseup', () => {
 });
 */
 
-// Cursor 
+/*// Cursor 
 
 const overlay = document.getElementById('overlay');
 const container = document.getElementById('container');
@@ -119,7 +119,7 @@ container.addEventListener('mouseup', () => {
     if (isMobile()) return; // Skip the cursor effect on mobile
     overlay.style.width = '0px'; // Small size
     overlay.style.height = '0px'; // Small size
-});
+});*/
 
 /*countdown*/
 window.addEventListener('load', () => {

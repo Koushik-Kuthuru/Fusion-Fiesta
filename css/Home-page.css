@@ -447,8 +447,9 @@
     margin-top: 70px;
 }
 
-.recap-video video{
+.recap-video iframe{
     width: 60%;
+    height: 40%;
     position: absolute;
     top: 50%;
     justify-items: center;
@@ -528,7 +529,7 @@
       font-style: italic;
     }
 
-    .recap-video video{
+    .recap-video iframe{
       border-radius: 20px;
       border: none;
     }
