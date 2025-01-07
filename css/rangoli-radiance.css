@@ -28,9 +28,9 @@
 #navbar {
     background: white;
     height: 70px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
     position: fixed;
     justify-content: center;
     top: 0;
@@ -40,7 +40,7 @@
     padding: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
     backdrop-filter: blur(10px);
-    margin-top: 40px;
+    margin-top: 3vw;
     transition: top 0.8s;
   }
   
@@ -53,10 +53,11 @@
   }
   #navbar #logo img {
     width: 50px;
+    padding: 5px 0;
   }
   #logo {
     position: relative;
-    top: 6px;
+    top: 0px;
     left: 30px;
   }
   
@@ -72,13 +73,14 @@
   .header-setting {
     float: left;
     text-align: center;
-    height: 70px;
+    height: 5vw;
     position: relative;
-    left: 35%;
-    margin-left: 15px;
+    left: 30vw;
+    margin-left: 1vw;
   }
   .hs-toggles {
-    padding: 5px 0;
+    height: 5vw;
+    padding: 0.4vw 0;
   }
   .header-name {
   position: relative;
@@ -95,65 +97,7 @@
   .header-name:hover{
     color: #ff5c35;
   }
-  .scanner{
-  position: absolute;
-  }
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    justify-content: center;
-    align-items: center;
-}
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-.modal-content h3{
-  color: #213343;
-}
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-.input-group {
-    margin: 10px 0;
-}
-.input-group label {
-  color: #213343;
-    display: block;
-    margin-bottom: 5px;
-}
-.input-group input {
-  color: #213343;
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-#camera {
-    display: none;
-    margin-top: 20px;
-}
+  
   
   /*HEADER ENDS
   ---------------------------------------------------*/
@@ -207,7 +151,6 @@
     top: -12vh;
     float: left;
     left: 1px;
-
   }
   .register-btn:hover{
     transform: scale(1.05);
@@ -286,6 +229,7 @@
 #details ul li {
   margin: 1vw 0;
   line-height: 2;
+  font-size: 1vw;
 }
 #rules ul{
   list-style-type: none;
@@ -296,6 +240,7 @@
 #rules ul li {
   margin: 1vw 0;
   line-height: 2;
+  font-size: 1vw;
 }
 .section {
     display: none;
@@ -330,7 +275,7 @@
  /*footer*/
  .footer{
   background-color:#213343;
-  height: 25vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   position: relative;
@@ -339,6 +284,7 @@
   padding: 0.5vw;
   padding-left: 10vw;
   padding-right: 10vw;
+  padding-bottom: 2.5vw;
 }
 .footer-container{
   padding: 2vw 0 0.5vw 0;
@@ -374,27 +320,27 @@
 .footer-name {
   position: relative;
     font-size: 1vw;
-    top: 30px;
-    line-height: 20px;
-    padding: 20px;
-    padding-right: 15px;
+    top: 1.5vw;
+    line-height: 2vw;
+    padding: 1vw;
+    padding-right: 1vw;
     color: #ffffff;
     font-family:'LexendDeca';
     font-weight: 500;
     text-decoration: none;
 }
 .social-buttons{
-  font-size: 25px;
+  font-size: 1.8vw;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: relative;
-  top: 100px;
+  top: 4vw;
 }
 .social-buttons p{
   color: grey;
-  position: absolute;
-  font-size: 18px;
-  top: -8px;
-  left: -150px;
+  position: relative;
+  font-size: 1vw;
+  top: 1.8vw;
+  left: -10vw;
   font-family: 'LexendDeca';
 }
 .social-buttons a.fab {
@@ -403,8 +349,8 @@
 }
 
 .social-buttons a {
-  font-size: 0.64em;
-  padding-right: 0.6em;
+  font-size: 1.3vw;
+  padding-right: 0.6vw;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -413,11 +359,11 @@
 .social-buttons a {
   display: inline-block;
   border-radius: var(--ap-border-radius);
-  height: 40px;
-  width: 40px;
+  height: 2.5vw;
+  width: 2.5vw;
   text-align: center;
   background-color: #213343;
-  padding: 10px;
+  padding: 0.5vw;
   border-radius: 50%;
   border: grey solid 0.3px;
   transition: 1s;
@@ -427,7 +373,13 @@
 }
 
 /*footer ends*/
-
+@media (min-width: 1280px) and (max-width: 1440px) {
+  #navbar{
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     margin: 0; 
@@ -759,23 +711,4 @@ line-height: 2;
 
 /*footer ends*/
 
-}
-@media (min-width: 1280px) and (max-width: 1440px) {
-  #navbar{
-    width: auto;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .footer{
-    height: 30vh;
-    padding: 5px 5vw;
-  }
-  .hs-toggles-footer {
-    position: relative;
-    left: 13%;
-  }
-  .social-buttons{
-    top: -2vh;
-    left: 70%;
-  }
 }

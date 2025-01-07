@@ -28,9 +28,9 @@
 #navbar {
     background: white;
     height: 70px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
     position: fixed;
     justify-content: center;
     top: 0;
@@ -40,7 +40,7 @@
     padding: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
     backdrop-filter: blur(10px);
-    margin-top: 40px;
+    margin-top: 3vw;
     transition: top 0.8s;
   }
   
@@ -95,72 +95,14 @@
   .header-name:hover{
     color: #ff5c35;
   }
-  .scanner{
-  position: absolute;
-  }
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    justify-content: center;
-    align-items: center;
-}
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-.modal-content h3{
-  color: #213343;
-}
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-.input-group {
-    margin: 10px 0;
-}
-.input-group label {
-  color: #213343;
-    display: block;
-    margin-bottom: 5px;
-}
-.input-group input {
-  color: #213343;
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-#camera {
-    display: none;
-    margin-top: 20px;
-}
+   
   
   /*HEADER ENDS
   ---------------------------------------------------*/
   .events-image-bg{
     background: #F5F5DC;
     color: #fff;
-    padding-bottom: 80px;
+    padding-bottom: 8vw;
   }
   .events-image-bg img{
     margin: 0;
@@ -169,33 +111,34 @@
   }
   .overlay-events{
     position: absolute;
-    top: 22%;
-    left: 50%;
+    top: 15vw;
+    left: 25vw;
     z-index: 1;
   }
   .overlay-events h1{
     font-family: "Agharti";
     text-transform: uppercase;
-    letter-spacing: 20px;
-    font-size:120px;
-    color: #D3D3D3;
-    text-align: left;
+    letter-spacing: 1vw;
+    font-size:10vw;
+    color: #ffffff;
+    text-align: center;
+    width: 50vw;
   }
   .overlay-events span{
     font-family: "LexendDeca";
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
     position: relative;
-    line-height: 50px;
-    top: -85px;
+    line-height: 0.5vw;
+    top: -15vh;
   }
   .overlay-events p{
     font-family: "LexendDeca";
-    font-size: 18px;
+    font-size: 1.2vw;
     letter-spacing: 1px;
     position: relative;
-    line-height: 25px;
-    top: -85px;
+    line-height: 1.5vw;
+    top: -12vh;
     text-transform: capitalize;
   }
   .register-btn{
@@ -203,10 +146,9 @@
     margin: 1px 0;
     line-height: 0;
     position: relative;
-    top: -80px;
+    top: -12vh;
     float: left;
     left: 1px;
-
   }
   .register-btn:hover{
     transform: scale(1.05);
@@ -215,21 +157,21 @@
     color: #333333;
     font-weight: 600;
     background-color: #D3D3D3;
-    padding: 18px;
+    padding: 1vw;
     border-radius: 10px;
     text-decoration: none;
     font-family: "LexendDeca";
-    letter-spacing: 2px;
-    font-size: 18px;
+    letter-spacing: 0.2vw;
+    font-size: 1vw;
   }
   .about-container{
     position: relative;
     text-align: center;
     border: #f2e1c5 solid 1px;
-    margin: 0 15%;
-    margin-top: 90px;
-    margin-bottom: 100px;
-    padding: 30px;
+    margin: 0 13vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 3vh;
     border-radius: 20px;
     background-color: #f2e1c5;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -237,32 +179,33 @@
   .about-container h1{
     color: #50504b;
     font-family: "LexendDeca";
-    font-size: 50px;
-    margin: 8px 0;
+    font-size: 2vw;
+    margin: 0.8vw 0;
   }
   .about-container p{
     color: #50504b;
     font-family: "LexendDeca";
-    font-size: 18px;
-    letter-spacing: 1.5px;
-    margin: 20px 50px;
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
+    margin: 2vw 5vw;
+    text-align: justify;
     text-align: justify;
   }
   .details {
     display: flex;
     justify-content: center;
     background-color: #50504b;
-    padding: 10px 0;
+    padding: 1vw 0;
     border: 1px solid #000;
     border-bottom:none;
-    margin: 0 20% ;
+    margin: 0 20vw ;
 }
 .details a {
     color: #D3D3D3;
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 20px;
-    padding: 10px 20px;
+    margin: 0 2vw;
+    font-size: 1.2vw;
+    padding: 0.5vw 3vw;
     font-family: "LexendDeca";
     font-weight: 600;
 }
@@ -280,30 +223,32 @@
   list-style-type: none;
   padding-left: 0;
   text-align: left;
-  margin: 0 50px;
+  margin: 0 5vw;
 }
 #details ul li {
-  margin: 10px 0;
+  margin: 1vw 0;
   line-height: 2;
+  font-size: 1vw;
 }
 #rules ul{
   list-style-type: none;
   padding-left: 0;
   text-align: left;
-  margin: 0 50px;
+  margin: 0 5vw;
 }
 #rules ul li {
-  margin: 10px 0;
+  margin: 1vw 0;
   line-height: 2;
+  font-size: 1vw;
 }
 .section {
     display: none;
-    padding: 20px;
+    padding: 1.8vw;
     text-align: center;
     background-color: #ffffff;
     color: #50504b;
     margin: 0;
-    margin: 0 20%;
+    margin: 0 20vw;
     font-family: 'LexendDeca';
     border: #D3D3D3 solid 1px;
 }
@@ -312,86 +257,89 @@
 }
 .contact-section {
     background-color: white;
-    padding: 20px;
+    padding: 2vw;
     color: #50504b;
 }
 .contact-card {
     border: 1px solid #D3D3D3;
-    padding: 20px;
-    margin: 20px 10%;
+    padding: 1.5vw;
+    margin: 2vw 10vw;
     text-align: center;
 }
 .contact-card p {
-    margin: 5px 0;
+    margin: 0.5vw 0;
+    font-size: 1.1vw;
 }
 
- /*footer*/
+  /*footer*/
  .footer{
   background-color:#213343;
-  height: 25vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
-  padding: 5px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0.5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 2.5vw;
 }
 .footer-container{
-  padding: 45px 0 5px;
+  padding: 2vw 0 0.5vw 0;
   display: flex;
   flex-wrap: wrap;
 }
 .footer-logo{
   height: auto; 
-  width: 300px;
+  width: 20vw;
   position: relative;
 }
 .date-footer{
   font-family: 'LexendDeca';
   color: #949393;
   position: relative;
-  left: 10px;
-  font-size: 13px;
-  letter-spacing: 1.2px;
+  left: 1vw;
+  font-size: 0.8vw;
+  letter-spacing:0.1vw;
+  padding-top: 0.5vw;
 }
 .copyrights{
   color: white;
   font-family: 'LexendDeca';
-  font-size: 10px;
+  font-size: 0.6vw;
   position: relative;
-  top: 20px;
-  left: 20px;
+  left: 1vw;
+  padding-top: 0.5vw;
 }
 .hs-toggles-footer {
   position: relative;
-  left: 23%;
+  left: 20vw;
 }
 .footer-name {
   position: relative;
-    font-size: 15px;
-    top: 30px;
-    line-height: 20px;
-    padding: 20px;
-    padding-right: 15px;
+    font-size: 1vw;
+    top: 1.5vw;
+    line-height: 2vw;
+    padding: 1vw;
+    padding-right: 1vw;
     color: #ffffff;
     font-family:'LexendDeca';
     font-weight: 500;
     text-decoration: none;
 }
 .social-buttons{
-  font-size: 25px;
+  font-size: 1.8vw;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: relative;
-  top: 100px;
+  top: 4vw;
 }
 .social-buttons p{
   color: grey;
-  position: absolute;
-  font-size: 18px;
-  top: -8px;
-  left: -150px;
+  position: relative;
+  font-size: 1vw;
+  top: 1.8vw;
+  left: -10vw;
   font-family: 'LexendDeca';
 }
 .social-buttons a.fab {
@@ -400,8 +348,8 @@
 }
 
 .social-buttons a {
-  font-size: 0.64em;
-  padding-right: 0.6em;
+  font-size: 1.3vw;
+  padding-right: 0.6vw;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -410,11 +358,11 @@
 .social-buttons a {
   display: inline-block;
   border-radius: var(--ap-border-radius);
-  height: 40px;
-  width: 40px;
+  height: 2.5vw;
+  width: 2.5vw;
   text-align: center;
   background-color: #213343;
-  padding: 10px;
+  padding: 0.5vw;
   border-radius: 50%;
   border: grey solid 0.3px;
   transition: 1s;

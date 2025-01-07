@@ -14,7 +14,7 @@
   *::before,
   *::after {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
   }
   
@@ -69,9 +69,6 @@
   .mobile-menu{
     display: none;
   }
-  .mobile-menu{
-    display: none;
-  }
   .header-setting {
     float: left;
     text-align: center;
@@ -103,20 +100,19 @@
   /*HEADER ENDS
   ---------------------------------------------------*/
   .events-image-bg{
-    background: #FFF5E1;
+    background: #F5F5DC;
     color: #fff;
     padding-bottom: 8vw;
-
   }
   .events-image-bg img{
     margin: 0;
     width: 100%;
-    border-bottom: #213343 solid 1px;
+    border-bottom: #D3D3D3 solid 2px;
   }
   .overlay-events{
     position: absolute;
-    top: 7.5vw;
-    left: 15vw;
+    top: 12vw;
+    left: 20vw;
     z-index: 1;
   }
   .overlay-events h1{
@@ -124,10 +120,9 @@
     text-transform: uppercase;
     letter-spacing: 1vw;
     font-size:8vw;
-    line-height: 150px;
-    color: #213343;
+    color: #D3D3D3;
     text-align: left;
-    width: 35vw;
+    width: 50vw;
   }
   .overlay-events span{
     font-family: "LexendDeca";
@@ -154,15 +149,14 @@
     top: -12vh;
     float: left;
     left: 1px;
-
   }
   .register-btn:hover{
     transform: scale(1.05);
   }
   .register-btn a{
-    color: white;
+    color: #333333;
     font-weight: 600;
-    background-color: #213343;
+    background-color: #D3D3D3;
     padding: 1vw;
     border-radius: 10px;
     text-decoration: none;
@@ -173,6 +167,7 @@
   .about-container{
     position: relative;
     text-align: center;
+    border: #f2e1c5 solid 1px;
     margin: 0 13vw;
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -182,30 +177,31 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   .about-container h1{
-    color: #213343;
+    color: #50504b;
     font-family: "LexendDeca";
     font-size: 3vw;
     margin: 0.8vw 0;
   }
   .about-container p{
-    color: #213343;
+    color: #50504b;
     font-family: "LexendDeca";
     font-size: 1.2vw;
     letter-spacing: 0.1vw;
     margin: 2vw 5vw;
     text-align: justify;
+    text-align: justify;
   }
   .details {
     display: flex;
     justify-content: center;
-    background-color: #d8cac7;
+    background-color: #50504b;
     padding: 1vw 0;
-    border: #213343 solid 1px;
-    border-bottom: none;
+    border: 1px solid #000;
+    border-bottom:none;
     margin: 0 20vw ;
 }
 .details a {
-    color: #fff;
+    color: #D3D3D3;
     text-decoration: none;
     margin: 0 2vw;
     font-size: 1.2vw;
@@ -216,12 +212,12 @@
 .details a:hover{
   font-weight: bold;
   border-bottom: 3px solid #ffffff;
-  color: #213343;
+  color: #fff;
 }
 .details a.active {
     font-weight: bold;
     border-bottom: 3px solid #ffffff;
-    color: #213343;
+    color: #fff;
 }
 #details ul {
   list-style-type: none;
@@ -230,7 +226,7 @@
   margin: 0 5vw;
 }
 #details ul li {
-  margin: 10px 0;
+  margin: 1vw 0;
   line-height: 2;
   font-size: 1vw;
 }
@@ -250,12 +246,11 @@
     padding: 1.8vw;
     text-align: center;
     background-color: #ffffff;
-    color: #213343;
+    color: #50504b;
     margin: 0;
     margin: 0 20vw;
     font-family: 'LexendDeca';
-    border: #213343 solid 1px;
-
+    border: #D3D3D3 solid 1px;
 }
 .section.active {
     display: block;
@@ -263,20 +258,20 @@
 .contact-section {
     background-color: white;
     padding: 2vw;
-    color: #213343;
+    color: #50504b;
 }
 .contact-card {
-    border: 1px solid #213343;
+    border: 1px solid #D3D3D3;
     padding: 1.5vw;
     margin: 2vw 10vw;
     text-align: center;
 }
 .contact-card p {
-  margin: 0.5vw 0;
-  font-size: 1.1vw;
+    margin: 0.5vw 0;
+    font-size: 1.1vw;
 }
 
- /*footer*/
+  /*footer*/
  .footer{
   background-color:#213343;
   height: 100%;
@@ -375,13 +370,7 @@
 .color{
   color: white;
 }
-@media (min-width: 1280px) and (max-width: 1440px) {
-  #navbar{
-    width: auto;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
+
 /*footer ends*/
 @media screen and (max-width: 768px) {
   body {
@@ -509,7 +498,6 @@
   margin: 0;
   width: 100%;
   height: 100%;
-  border-bottom: #213343 solid 2px;
 }
 .overlay-events{
   position: absolute;
@@ -523,7 +511,7 @@
   letter-spacing: 1vw;
   font-size: 12vw;
   line-height: 6vw;
-  color: #213343;
+  color: #50504b;
   text-align: left;
 }
 .overlay-events h1 strong{
@@ -562,7 +550,7 @@
 .register-btn a{
   color: white;
   font-weight: 600;
-  background-color: #213343;
+  background-color: #50504b;
   padding: 2.5vw 3vw;
   border-radius: 10px;
   text-decoration: none;
@@ -599,14 +587,12 @@
 .details {
   display: flex;
   justify-content: center;
-  background-color: #d8cac7;
   padding: 10px 10px;
   border: #213343 solid 1px;
   border-bottom: none;
   margin: 0 7vw ;
 }
 .details a {
-  color: #fff;
   text-decoration: none;
   margin: 0 2.5px;
   font-size: 3.2vw;
@@ -617,12 +603,10 @@
 .details a:hover{
 font-weight: bold;
 border-bottom: 3px solid #ffffff;
-color: #213343;
 }
 .details a.active {
   font-weight: bold;
   border-bottom: 3px solid #ffffff;
-  color: #213343;
 }
 #details ul {
 list-style-type: none;
@@ -649,7 +633,6 @@ line-height: 2;
   padding: 10px;
   text-align: center;
   background-color: #ffffff;
-  color: #213343;
   margin: 0;
   margin: 0 7vw;
   font-size: 3vw;
@@ -661,7 +644,6 @@ line-height: 2;
 .contact-section {
   background-color: white;
   padding: 20px;
-  color: #213343;
 }
 .contact-card {
   border: 1px solid #213343;

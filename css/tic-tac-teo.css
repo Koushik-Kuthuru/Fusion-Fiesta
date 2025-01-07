@@ -493,16 +493,4 @@ position: absolute;
     margin-left: 5%;
     margin-right: 5%;
   }
-  .footer{
-    height: 30vh;
-    padding: 5px 5vw;
-  }
-  .hs-toggles-footer {
-    position: relative;
-    left: 13%;
-  }
-  .social-buttons{
-    top: -2vh;
-    left: 70%;
-  }
 }
