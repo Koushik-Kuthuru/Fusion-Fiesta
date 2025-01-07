@@ -160,7 +160,7 @@
   .events-image-bg{
     background: #F5F5DC;
     color: #fff;
-    padding-bottom: 80px;
+    padding-bottom: 8vw;
   }
   .events-image-bg img{
     margin: 0;
@@ -169,34 +169,34 @@
   }
   .overlay-events{
     position: absolute;
-    top: 15%;
-    left: 250px;
+    top: 7.5vw;
+    left: 15vw;
     z-index: 1;
   }
   .overlay-events h1{
     font-family: "Agharti";
     text-transform: uppercase;
-    letter-spacing: 20px;
-    font-size:120px;
+    letter-spacing: 1vw;
+    font-size:8vw;
     color: #333333;
     text-align: left;
     width: 50vw;
   }
   .overlay-events span{
     font-family: "LexendDeca";
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
     position: relative;
-    line-height: 50px;
-    top: -85px;
+    line-height: 0.5vw;
+    top: -12vh;
   }
   .overlay-events p{
     font-family: "LexendDeca";
-    font-size: 18px;
+    font-size: 1.2vw;
     letter-spacing: 1px;
     position: relative;
-    line-height: 25px;
-    top: -85px;
+    line-height: 1.5vw;
+    top: -12vh;
     text-transform: capitalize;
   }
   .register-btn{
@@ -204,7 +204,7 @@
     margin: 1px 0;
     line-height: 0;
     position: relative;
-    top: -80px;
+    top: -12vh;
     float: left;
     left: 1px;
 
@@ -216,21 +216,21 @@
     color: white;
     font-weight: 600;
     background-color: #333333;
-    padding: 18px;
+    padding: 1vw;
     border-radius: 10px;
     text-decoration: none;
     font-family: "LexendDeca";
-    letter-spacing: 2px;
-    font-size: 18px;
+    letter-spacing: 0.2vw;
+    font-size: 1vw;
   }
   .about-container{
     position: relative;
     text-align: center;
     border: #f2e1c5 solid 1px;
-    margin: 0 15%;
-    margin-top: 90px;
-    margin-bottom: 100px;
-    padding: 30px;
+    margin: 0 13vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 3vh;
     border-radius: 20px;
     background-color: #f2e1c5;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -238,32 +238,32 @@
   .about-container h1{
     color: #333333;
     font-family: "LexendDeca";
-    font-size: 50px;
-    margin: 8px 0;
+    font-size: 3vw;
+    margin: 0.8vw 0;
   }
   .about-container p{
     color: #333333;
     font-family: "LexendDeca";
-    font-size: 18px;
-    letter-spacing: 1.5px;
-    margin: 20px 50px;
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
+    margin: 2vw 5vw;
     text-align: justify;
   }
   .details {
     display: flex;
     justify-content: center;
     background: linear-gradient(to right, #f3d8ac, #fd8b69);;
-    padding: 10px 0;
+    padding: 1vw 0;
     border: 1px solid #000;
     border-bottom:none;
-    margin: 0 20% ;
+    margin: 0 20vw ;
 }
 .details a {
     color: #fff;
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 20px;
-    padding: 10px 20px;
+    margin: 0 2vw;
+    font-size: 1.2vw;
+    padding: 0.5vw 3vw;
     font-family: "LexendDeca";
     font-weight: 600;
 }
@@ -281,30 +281,30 @@
   list-style-type: none;
   padding-left: 0;
   text-align: left;
-  margin: 0 50px;
+  margin: 0 5vw;
 }
 #details ul li {
-  margin: 10px 0;
+  margin: 1vw 0;
   line-height: 2;
 }
 #rules ul{
   list-style-type: none;
   padding-left: 0;
   text-align: left;
-  margin: 0 50px;
+  margin: 0 5vw;
 }
 #rules ul li {
-  margin: 10px 0;
+  margin: 1vw 0;
   line-height: 2;
 }
 .section {
     display: none;
-    padding: 20px;
+    padding: 1.8vw;
     text-align: center;
     background-color: #ffffff;
     color: #213343;
     margin: 0;
-    margin: 0 20%;
+    margin: 0 20vw;
     font-family: 'LexendDeca';
     border: #333333 solid 1px;
 }
@@ -313,17 +313,18 @@
 }
 .contact-section {
     background-color: white;
-    padding: 20px;
+    padding: 2vw;
     color: #213343;
 }
 .contact-card {
     border: 1px solid #213343;
-    padding: 20px;
-    margin: 20px 10%;
+    padding: 1.5vw;
+    margin: 2vw 10vw;
     text-align: center;
 }
 .contact-card p {
-    margin: 5px 0;
+    margin: 0.5vw 0;
+    font-size: 1.1vw;
 }
 
  /*footer*/
@@ -335,43 +336,44 @@
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
-  padding: 5px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0.5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 .footer-container{
-  padding: 45px 0 5px;
+  padding: 2vw 0 0.5vw 0;
   display: flex;
   flex-wrap: wrap;
 }
 .footer-logo{
   height: auto; 
-  width: 300px;
+  width: 20vw;
   position: relative;
 }
 .date-footer{
   font-family: 'LexendDeca';
   color: #949393;
   position: relative;
-  left: 10px;
-  font-size: 13px;
-  letter-spacing: 1.2px;
+  left: 1vw;
+  font-size: 0.8vw;
+  letter-spacing:0.1vw;
+  padding-top: 0.5vw;
 }
 .copyrights{
   color: white;
   font-family: 'LexendDeca';
-  font-size: 10px;
+  font-size: 0.6vw;
   position: relative;
-  top: 20px;
-  left: 20px;
+  left: 1vw;
+  padding-top: 0.5vw;
 }
 .hs-toggles-footer {
   position: relative;
-  left: 23%;
+  left: 20vw;
 }
 .footer-name {
   position: relative;
-    font-size: 15px;
+    font-size: 1vw;
     top: 30px;
     line-height: 20px;
     padding: 20px;
