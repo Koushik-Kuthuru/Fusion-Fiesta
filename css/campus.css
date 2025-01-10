@@ -37,8 +37,8 @@
     background: white;
     height: 70px;
     width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 10vw;
+    margin-right: 10vw;
     position: fixed;
     justify-content: center;
     top: 0;
@@ -48,7 +48,7 @@
     padding: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
     backdrop-filter: blur(10px);
-    margin-top: 40px;
+    margin-top: 3vw;
     transition: top 0.8s;
 }
 
@@ -80,10 +80,10 @@
 .header-setting {
     float: left;
     text-align: center;
-    height: 70px;
+    height: 5vw;
     position: relative;
-    left: 35%;
-    margin-left: 15px;
+    left: 30vw;
+    margin-left: 1vw;
 }
 .hs-toggles {
     padding: 5px 0;
@@ -132,9 +132,9 @@
     z-index: 1;
   }
   .overlay-vedio {
-    position: absolute;
+    position: relative;
     left: 0;
-    top: 0;
+    top: -78vh;
     width: 100%;
     height: 75vh;
     z-index: 2;
@@ -391,101 +391,103 @@
   }
   /*footer*/
  .footer{
-    background-color:#213343;
-    height: 25vh;
-    width: 100%;
-    margin: 0;
-    position: relative;
-    top: -5px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 5px;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .footer-container{
-    padding: 45px 0 5px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer-logo{
-    height: auto; 
-    width: 300px;
-    position: relative;
-  }
-  .date-footer{
-    font-family: 'LexendDeca';
-    color: #949393;
-    position: relative;
-    left: 10px;
-    font-size: 13px;
-    letter-spacing: 1.2px;
-  }
-  .copyrights{
-    color: white;
-    font-size: 10px;
-    position: relative;
-    top: 20px;
-    left: 20px;
-  }
-  .hs-toggles-footer {
-    position: relative;
-    left: 23%;
-  }
-  .footer-name {
-    position: relative;
-      font-size: 15px;
-      top: 30px;
-      line-height: 20px;
-      padding: 20px;
-      padding-right: 15px;
-      color: #ffffff;
-      font-family:'LexendDeca';
-      font-weight: 500;
-  }
-  .social-buttons{
-    font-size: 25px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
-    top: 100px;
-  }
-  .social-buttons p{
-    color: grey;
-    position: absolute;
-    font-size: 18px;
-    top: -8px;
-    left: -150px;
-    font-family: 'LexendDeca';
-  }
-  .social-buttons a.fab {
-    display: inline-block;;
-    margin: 8px 0 8px 0px;
-  }
-  
-  .social-buttons a {
-    font-size: 0.64em;
-    padding-right: 0.6em;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    border-radius: 10px;
-  }
-  .social-buttons a {
-    display: inline-block;
-    border-radius: var(--ap-border-radius);
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    background-color: #213343;
-    padding: 10px;
-    border-radius: 50%;
-    border: grey solid 0.3px;
-    transition: 1s;
-  }
-  .color{
-    color: white;
-  }
-  
+  background-color:#213343;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0.5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 2.5vw;
+}
+.footer-container{
+  padding: 2vw 0 0.5vw 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-logo{
+  height: auto; 
+  width: 20vw;
+  position: relative;
+}
+.date-footer{
+  font-family: 'LexendDeca';
+  color: #949393;
+  position: relative;
+  left: 1vw;
+  font-size: 0.8vw;
+  letter-spacing:0.1vw;
+  padding-top: 0.5vw;
+}
+.copyrights{
+  color: white;
+  font-family: 'LexendDeca';
+  font-size: 0.6vw;
+  position: relative;
+  left: 1vw;
+  padding-top: 0.5vw;
+}
+.hs-toggles-footer {
+  position: relative;
+  left: 20vw;
+}
+.footer-name {
+  position: relative;
+    font-size: 1vw;
+    top: 1.5vw;
+    line-height: 2vw;
+    padding: 1vw;
+    padding-right: 1vw;
+    color: #ffffff;
+    font-family:'LexendDeca';
+    font-weight: 500;
+    text-decoration: none;
+}
+.social-buttons{
+  font-size: 1.8vw;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  top: 3vw;
+}
+.social-buttons p{
+  color: grey;
+  position: relative;
+  font-size: 1vw;
+  top: 3vw;
+  left: -10vw;
+  font-family: 'LexendDeca';
+}
+.social-buttons a.fab {
+  display: inline-block;;
+  margin: 8px 0 8px 0px;
+}
+
+.social-buttons a {
+  font-size: 1.3vw;
+  padding-right: 0.6vw;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 10px;
+}
+.social-buttons a {
+  display: inline-block;
+  border-radius: var(--ap-border-radius);
+  height: 2.5vw;
+  width: 2.5vw;
+  text-align: center;
+  background-color: #213343;
+  padding: 0.5vw;
+  border-radius: 50%;
+  border: grey solid 0.3px;
+  transition: 1s;
+}
+.color{
+  color: white;
+}
   /*footer ends*/
   
   /* Media Queries for 13 to 14-inch laptops */
@@ -498,24 +500,9 @@
     margin-left: 5vw;
     margin-right: 5vw
   }
-  .overlay-vedio {
-    height: 76vh;
-  }
   .follow-card{
     height: 65%;
   }
-
-.footer{
-  height: 30vh;
-}
-.hs-toggles-footer {
-  position: relative;
-  left: 13%;
-}
-.social-buttons{
-  top: -6vh;
-  left: 70%;
-}
 }
 /* Media Queries for 15 to 16-inch laptops */
 @media (min-width: 1370px) and (max-width: 1600px) {
@@ -527,24 +514,9 @@
     margin-left: 5vw;
     margin-right: 5vw;
   }
-  .overlay-vedio {
-    height: 69vh;
-  }
   .follow-card{
     height: 60%;
   }
-.footer{
-  height: 28vh;
-  padding: 5px 5vw;
-}
-.hs-toggles-footer {
-  position: relative;
-  left: 13%;
-}
-.social-buttons{
-  top: 8vh;
-  left: -10%;
-}
 }
 /* Extra small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {

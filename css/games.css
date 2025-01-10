@@ -24,6 +24,7 @@
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    height: 100%;
   }  
   /*HEADER STARTS
   ---------------------------------------------------*/
@@ -77,13 +78,14 @@
   .header-setting {
     float: left;
     text-align: center;
-    height: 70px;
+    height: 5vw;
     position: relative;
-    left: 35%;
-    margin-left: 15px;
+    left: 30vw;
+    margin-left: 1vw;
   }
-  .hs-toggles {
-    padding: 5px 0;
+ .hs-toggles {
+    height: 5vw;
+    padding: 0.4vw 0;
   }
   .header-name {
   position: relative;
@@ -181,73 +183,75 @@
 }
 
 
- /*footer*/
- .footer{
+  /*footer*/
+  .footer{
     background-color:#213343;
-    height: 25vh;
+    height: auto;
     width: 100%;
     margin: 0;
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding: 5px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 0.5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 2.5vw;
   }
   .footer-container{
-    padding: 45px 0 5px;
+    padding: 2vw 0 0.5vw 0;
     display: flex;
     flex-wrap: wrap;
   }
   .footer-logo{
     height: auto; 
-    width: 300px;
+    width: 20vw;
     position: relative;
   }
   .date-footer{
     font-family: 'LexendDeca';
     color: #949393;
     position: relative;
-    left: 10px;
-    font-size: 13px;
-    letter-spacing: 1.2px;
+    left: 1vw;
+    font-size: 0.8vw;
+    letter-spacing:0.1vw;
+    padding-top: 0.5vw;
   }
   .copyrights{
     color: white;
-    font-size: 10px;
-    font-family: "LexendDeca";
+    font-family: 'LexendDeca';
+    font-size: 0.6vw;
     position: relative;
-    top: 20px;
-    left: 20px;
+    left: 1vw;
+    padding-top: 0.5vw;
   }
   .hs-toggles-footer {
     position: relative;
-    left: 23%;
+    left: 20vw;
   }
   .footer-name {
     position: relative;
-      font-size: 15px;
-      top: 30px;
-      line-height: 20px;
-      padding: 20px;
-      padding-right: 15px;
+      font-size: 1vw;
+      top: 1.5vw;
+      line-height: 2vw;
+      padding: 1vw;
+      padding-right: 1vw;
       color: #ffffff;
       font-family:'LexendDeca';
       font-weight: 500;
       text-decoration: none;
   }
   .social-buttons{
-    font-size: 25px;
+    font-size: 1.8vw;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
-    top: 100px;
+    top: 4vw;
   }
   .social-buttons p{
     color: grey;
-    position: absolute;
-    font-size: 18px;
-    top: 8px;
-    left: -150px;
+    position: relative;
+    font-size: 1vw;
+    top: 1.8vw;
+    left: -10vw;
     font-family: 'LexendDeca';
   }
   .social-buttons a.fab {
@@ -256,8 +260,8 @@
   }
   
   .social-buttons a {
-    font-size: 0.64em;
-    padding-right: 0.6em;
+    font-size: 1.3vw;
+    padding-right: 0.6vw;
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -266,11 +270,11 @@
   .social-buttons a {
     display: inline-block;
     border-radius: var(--ap-border-radius);
-    height: 40px;
-    width: 40px;
+    height: 2.5vw;
+    width: 2.5vw;
     text-align: center;
     background-color: #213343;
-    padding: 10px;
+    padding: 0.5vw;
     border-radius: 50%;
     border: grey solid 0.3px;
     transition: 1s;
@@ -452,7 +456,7 @@
   @media (min-width: 1280px) and (max-width: 1440px) {
   #navbar{
     width: auto;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 }

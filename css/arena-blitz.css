@@ -72,13 +72,14 @@
   .header-setting {
     float: left;
     text-align: center;
-    height: 70px;
+    height: 5vw;
     position: relative;
-    left: 35%;
-    margin-left: 15px;
+    left: 30vw;
+    margin-left: 1vw;
   }
-  .hs-toggles {
-    padding: 5px 0;
+ .hs-toggles {
+    height: 5vw;
+    padding: 0.4vw 0;
   }
   .header-name {
   position: relative;
@@ -123,6 +124,7 @@
     color: #ffffff;
     text-align: center;
     width: 50vw;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   }
   .overlay-events span{
     font-family: "LexendDeca";
@@ -140,29 +142,6 @@
     line-height: 1.5vw;
     top: -12vh;
     text-transform: capitalize;
-  }
-  .register-btn{
-    text-align: center;
-    margin: 1px 0;
-    line-height: 0;
-    position: relative;
-    top: -12vh;
-    float: left;
-    left: 1px;
-  }
-  .register-btn:hover{
-    transform: scale(1.05);
-  }
-  .register-btn a{
-    color: #333333;
-    font-weight: 600;
-    background-color: #D3D3D3;
-    padding: 1vw;
-    border-radius: 10px;
-    text-decoration: none;
-    font-family: "LexendDeca";
-    letter-spacing: 0.2vw;
-    font-size: 1vw;
   }
   .about-container{
     position: relative;
@@ -191,86 +170,59 @@
     text-align: justify;
     text-align: justify;
   }
-  .details {
-    display: flex;
-    justify-content: center;
+  .games-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10vw;
+    margin: 0 25vw;
+  }
+  @media (min-width: 768px) {
+    .games-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .games-grid {
+      grid-template-columns: repeat(2, 1fr);
+      width: 20vw;
+    }
+  }
+  .games-card {
     background-color: #50504b;
-    padding: 1vw 0;
-    border: 1px solid #000;
-    border-bottom:none;
-    margin: 0 20vw ;
-}
-.details a {
-    color: #D3D3D3;
-    text-decoration: none;
-    margin: 0 2vw;
-    font-size: 1.2vw;
-    padding: 0.5vw 3vw;
-    font-family: "LexendDeca";
-    font-weight: 600;
-}
-.details a:hover{
-  font-weight: bold;
-  border-bottom: 3px solid #ffffff;
-  color: #fff;
-}
-.details a.active {
-    font-weight: bold;
-    border-bottom: 3px solid #ffffff;
-    color: #fff;
-}
-#details ul {
-  list-style-type: none;
-  padding-left: 0;
-  text-align: left;
-  margin: 0 5vw;
-}
-#details ul li {
-  margin: 1vw 0;
-  line-height: 2;
-  font-size: 1vw;
-}
-#rules ul{
-  list-style-type: none;
-  padding-left: 0;
-  text-align: left;
-  margin: 0 5vw;
-}
-#rules ul li {
-  margin: 1vw 0;
-  line-height: 2;
-  font-size: 1vw;
-}
-.section {
-    display: none;
-    padding: 1.8vw;
-    text-align: center;
-    background-color: #ffffff;
-    color: #50504b;
+    border-radius: 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 20vw;
+    height: auto;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .games-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+  .games-card img {
+    width: 20vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2px;
+    padding:0;
+    border-radius: 0;
     margin: 0;
-    margin: 0 20vw;
-    font-family: 'LexendDeca';
-    border: #D3D3D3 solid 1px;
-}
-.section.active {
-    display: block;
-}
-.contact-section {
-    background-color: white;
-    padding: 2vw;
-    color: #50504b;
-}
-.contact-card {
-    border: 1px solid #D3D3D3;
-    padding: 1.5vw;
-    margin: 2vw 10vw;
-    text-align: center;
-}
-.contact-card p {
-    margin: 0.5vw 0;
+  }
+  .games-card a{
+    text-decoration: none;
+    color: white;
+  }
+  .games-card h2 {
+    font-family: "LexendDeca";
     font-size: 1.1vw;
-}
-
+    letter-spacing: 0.1vw;
+    font-weight: 700;
+    margin: 0;
+    padding: 16px 16px;
+    padding-top: 10px;
+    text-align: center;
+  }
   /*footer*/
  .footer{
   background-color:#213343;

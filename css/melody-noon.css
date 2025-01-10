@@ -28,9 +28,9 @@
 #navbar {
     background: white;
     height: 70px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
     position: fixed;
     justify-content: center;
     top: 0;
@@ -40,7 +40,7 @@
     padding: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
     backdrop-filter: blur(10px);
-    margin-top: 40px;
+    margin-top: 3vw;
     transition: top 0.8s;
   }
   
@@ -72,13 +72,14 @@
   .header-setting {
     float: left;
     text-align: center;
-    height: 70px;
+    height: 5vw;
     position: relative;
-    left: 35%;
-    margin-left: 15px;
+    left: 30vw;
+    margin-left: 1vw;
   }
-  .hs-toggles {
-    padding: 5px 0;
+ .hs-toggles {
+    height: 5vw;
+    padding: 0.4vw 0;
   }
   .header-name {
   position: relative;
@@ -111,33 +112,34 @@
   }
   .overlay-events{
     position: absolute;
-    top: 22%;
-    left: 280px;
+    top: 12vw;
+    left: 15vw;
     z-index: 1;
   }
   .overlay-events h1{
     font-family: "Agharti";
     text-transform: uppercase;
-    letter-spacing: 20px;
-    font-size:120px;
+    letter-spacing: 1vw;
+    font-size:8vw;
     color: #fff;
     text-align: left;
+    width: 50vw;
   }
   .overlay-events span{
     font-family: "LexendDeca";
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
     position: relative;
-    line-height: 50px;
-    top: -85px;
+    line-height: 0.5vw;
+    top: -12vh;
   }
   .overlay-events p{
     font-family: "LexendDeca";
-    font-size: 18px;
+    font-size: 1.2vw;
     letter-spacing: 1px;
     position: relative;
-    line-height: 25px;
-    top: -85px;
+    line-height: 1.5vw;
+    top: -12vh;
     text-transform: capitalize;
   }
   .register-btn{
