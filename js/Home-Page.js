@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     if (window.innerWidth > 768) { // Desktop
         if (currentScroll > lastScrollTop) {
             // Scrolling down
-            navbar.style.top = "-120px"; // Hide the navbar (adjust based on navbar height)
+            navbar.style.top = "-10vw"; // Hide the navbar (adjust based on navbar height)
         } else {
             // Scrolling up
             navbar.style.top = "0"; // Show the navbar
@@ -16,7 +16,7 @@ window.addEventListener('scroll', function() {
     } else { // Mobile
         if (currentScroll > lastScrollTop) {
             // Scrolling down
-            navbar.style.top = "-120px"; // Hide the navbar
+            navbar.style.top = "-10vw"; // Hide the navbar
         } else {
             // Scrolling up
             if (currentScroll < mobileThreshold) {
