@@ -16,7 +16,7 @@ window.addEventListener('scroll', function() {
     } else { // Mobile
         if (currentScroll > lastScrollTop) {
             // Scrolling down
-            navbar.style.top = "-10vw"; // Hide the navbar
+            navbar.style.top = "-30vw"; // Hide the navbar
         } else {
             // Scrolling up
             if (currentScroll < mobileThreshold) {
@@ -71,7 +71,7 @@ container.addEventListener('mouseup', () => {
 });
 */
 
-/*// Cursor 
+// Cursor 
 
 const overlay = document.getElementById('overlay');
 const container = document.getElementById('container');
@@ -119,7 +119,7 @@ container.addEventListener('mouseup', () => {
     if (isMobile()) return; // Skip the cursor effect on mobile
     overlay.style.width = '0px'; // Small size
     overlay.style.height = '0px'; // Small size
-});*/
+});
 
 /*countdown*/
 window.addEventListener('load', () => {
@@ -138,7 +138,7 @@ window.addEventListener('load', () => {
     let totalSeconds;
     
     function init() {
-        totalSeconds = Math.floor((new Date('01/23/2025') - new Date()) / 1000); 
+        totalSeconds = Math.floor((new Date('01/23/2026') - new Date()) / 1000); 
         setTimeLeft();
         let interval = setInterval(() => {
             if (totalSeconds < 0) {
@@ -237,30 +237,3 @@ eventsContainers.forEach((item, i) => {
 })
 
 
-function myFunction(x) {
-    x.classList.toggle("change");
-}
-
-document.getElementById('menu-button').addEventListener('click', function() {
-    var menu = document.getElementById('mobile-menu');
-    var icon = this;
-
-    if (menu.style.display === 'none' || menu.style.display === '') {
-        menu.style.display = 'flex';
-        menu.style.height = 'auto'; // Set to auto to get the full height
-        const fullHeight = menu.scrollHeight + 'px'; // Get the full height
-        menu.style.height = '0px'; // Set to 0 for animation
-        setTimeout(() => {
-            menu.style.height = fullHeight; // Animate to full height
-        }, 10);
-        icon.classList.add('open');
-        myFunction(icon); // Toggle the button's class
-    } else {
-        menu.style.height = '0px';
-        menu.addEventListener('transitionend', function() {
-            menu.style.display = 'none';
-        }, { once: true });
-        icon.classList.remove('open');
-        myFunction(icon); // Toggle the button's class
-    }
-});
